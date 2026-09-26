@@ -1,4 +1,4 @@
-# AI Last-Mile Government Service Navigator
+# AI Last-Mile Government Service Navigator with Hybrid RAG
 
 An AI-powered citizen discovery platform designed for Indian citizens to discover relevant central and state government schemes based on their real-life needs and published eligibility criteria.
 
@@ -6,105 +6,186 @@ An AI-powered citizen discovery platform designed for Indian citizens to discove
 
 ## 🏛️ Core Architecture Principles
 
-1. **Deterministic Eligibility Rules Engine**: The LLM (*Gemini*) does **NOT** decide eligibility or invent criteria. All eligibility checks are executed deterministically by the backend rules engine.
-2. **Single Source of Truth**: [`schemes.json`](backend/src/data/schemes.json) is the verified source of truth for schemes, eligibility rules, benefits, documents, and official portal URLs.
-3. **Role of Gemini AI**: Natural Language Understanding (NLU), structured citizen attribute extraction from colloquial queries, generating follow-up guidance, and conversational summaries.
-4. **Advisory Compliance**: The system uses terms like *"You appear to meet the published criteria"* or *"Potentially relevant"* and never falsely claims official government authorization.
-5. **Verified Official Portals**: Every scheme card provides direct links to the official government portal.
+1. **RAG is ONLY for Candidate Discovery**: Semantic vector search discovers candidate schemes that may relate to a citizen's expressed situation or colloquial phrasing.
+2. **Deterministic Eligibility Rules Engine**: The LLM (*Gemini*) and Vector Search do **NOT** decide eligibility or invent criteria. All eligibility checks are executed deterministically by the backend rules engine (`eligibilityService.js`).
+3. **Single Source of Truth**: [`schemes.json`](backend/data/schemes.json) is the verified source of truth for schemes, eligibility rules, benefits, documents, and official portal URLs.
+4. **No Raw Vector Similarity as Eligibility**: Similarity scores are used exclusively for ranking candidate discovery internally and are never presented to citizens as "eligibility percentages".
+5. **Role of Gemini AI**: Natural Language Understanding (NLU), structured citizen attribute extraction from colloquial English & Tamil queries, generating follow-up guidance, and conversational summaries without inventing facts.
+6. **Bilingual Intelligence**: Full native support for English and தமிழ்.
+7. **Advisory Compliance**: Uses transparent phrases such as *"You appear to meet published criteria"* or *"Potentially relevant"* and never falsely claims official government authorization.
 
 ---
 
-## 📁 Project Structure
+## 🧠 Hybrid RAG Architecture
 
 ```
-GS_Navigator/
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   │   └── navigatorController.js   # Handles intake, recalculation, catalog endpoints
-│   │   ├── data/
-│   │   │   └── schemes.json             # Source of truth: verified schemes & criteria
-│   │   ├── routes/
-│   │   │   └── navigatorRoutes.js       # Express routes (/navigate, /evaluate-profile, /schemes)
-│   │   ├── services/
-│   │   │   ├── eligibilityEngine.js     # Deterministic criteria evaluation engine
-│   │   │   └── geminiService.js         # Gemini NLU extractor + heuristic fallback
-│   │   └── server.js                    # Express app & health check
-│   ├── .env.example                     # Environment configuration template
-│   ├── .env                             # Environment file
-│   └── package.json
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── CitizenQuerySection.jsx  # Natural language intake & preset personas
-│   │   │   ├── DisclaimerBanner.jsx     # Official advisory notice
-│   │   │   ├── EligibilityResults.jsx   # Results filtering & AI counselor summary
-│   │   │   ├── ExtractedProfileEditor.jsx # Interactive profile view & live editor
-│   │   │   ├── Navbar.jsx               # Header with engine & Gemini status
-│   │   │   └── SchemeCard.jsx           # Scheme details, matched criteria, docs checklist
-│   │   ├── services/
-│   │   │   └── api.js                   # Backend API client
-│   │   ├── App.jsx                      # Main app container
-│   │   ├── index.css                    # Global styling
-│   │   └── main.jsx                     # Vite entry point
-│   ├── index.html                       # HTML template with Tailwind CSS
-│   ├── vite.config.js                   # Vite dev server with proxy to backend
-│   └── package.json
-├── package.json                         # Root helper scripts
-└── README.md
+                                  [ Citizen Natural Language Request ]
+                                                  │
+                                                  ▼
+                        ┌──────────────────────────────────────────────────┐
+                        │      Gemini / Heuristic NLU & Extraction         │
+                        │    (Extracts Age, Income, Gender, State, Need)   │
+                        └─────────────────────────┬────────────────────────┘
+                                                  │
+                         ┌────────────────────────┴────────────────────────┐
+                         │                                                 │
+                         ▼                                                 ▼
+        ┌──────────────────────────────────┐             ┌──────────────────────────────────┐
+        │       RAG Semantic Search        │             │    Existing Structured Search    │
+        │   (Embeddings + Vector Store)    │             │   (Keywords, Category, Demogr.)  │
+        └────────────────┬─────────────────┘             └─────────────────┬────────────────┘
+                         │                                                 │
+                         └────────────────────────┬────────────────────────┘
+                                                  │
+                                                  ▼
+                        ┌──────────────────────────────────────────────────┐
+                        │          Merge & Deduplicate Candidates          │
+                        │      (Preserving verified scheme records)        │
+                        └─────────────────────────┬────────────────────────┘
+                                                  │
+                                                  ▼
+                        ┌──────────────────────────────────────────────────┐
+                        │      DETERMINISTIC ELIGIBILITY RULES ENGINE      │
+                        │    (Evaluates Age, Gender, Income, PwD, State)   │
+                        │   *Source of Truth: schemes.json (Unchanged)*    │
+                        └─────────────────────────┬────────────────────────┘
+                                                  │
+                                                  ▼
+                        ┌──────────────────────────────────────────────────┐
+                        │      Final Ranked Results & Gemini Explanations  │
+                        │   (Potential Matches, Criteria Match Breakdown)  │
+                        └──────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🚀 How to Run
+## 🔍 Why RAG is Used in this Project
 
-### 1. Backend Setup
+1. **Vocabulary Mismatch Resolution**: Citizens describe real-world problems in colloquial terms (e.g. *"Heavy rain flooded my field and crops died"* or *"Struggling to pay my college fees"*), whereas government schemes have official nomenclature (e.g. *"Pradhan Mantri Fasal Bima Yojana"* or *"Post-Matric Scholarship for BC/MBC"*).
+2. **Semantic Similarity vs. Eligibility Verification**:
+   - **RAG Semantic Search**: Discovers *relevance* (which schemes are about this topic).
+   - **Deterministic Rules Engine**: Verifies *eligibility* (whether the citizen meets published criteria like age ceilings, income thresholds, state residence, etc.).
+
+---
+
+## 🗄️ Vector Database & Embeddings Pipeline
+
+* **Vector Search Service (`vectorSearchService.js`)**:
+  - Modular vector store abstraction providing in-memory index + persistent cache (`backend/data/rag_index_cache.json`).
+  - Implements cosine similarity search with optional metadata filtering.
+  - Zero bulky external database daemons required for deployment.
+* **Embeddings**:
+  - Primary: Google Gemini `text-embedding-004` (when `GEMINI_API_KEY` is configured).
+  - Fallback: High-dimensional deterministic semantic embedding generator (256-dimensional subword & domain cluster hashing with L2 normalization) ensuring offline and CI/CD test suite operation.
+* **Searchable Document Representation**:
+  Each scheme is converted into a rich textual document combining Scheme Name, Description, Category, Department, Jurisdiction, Key Benefits, Eligibility Criteria, Required Documents, and Official Source.
+
+---
+
+## 🔄 Rebuilding the RAG Index
+
+Whenever `schemes.json` is modified or updated with new government schemes, rebuild the vector index:
+
+```bash
+cd backend
+npm run build:rag
+```
+
+This will parse `schemes.json`, generate embeddings, and save the updated vector cache to `backend/data/rag_index_cache.json`.
+
+---
+
+## 🛡️ Graceful Fallback Mechanism
+
+If the vector database is unavailable or embedding service encounters a network error:
+1. RAG returns an empty candidate list and logs a diagnostic warning.
+2. The workflow automatically continues using **Structured Search candidates**.
+3. Candidates are evaluated by the deterministic eligibility engine with **zero application crashes**.
+
+---
+
+## ⚙️ Environment Variables
+
+Create `.env` in `backend/` (see `.env.example`):
+
+```env
+PORT=5000
+GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_MODEL=gemini-1.5-flash-latest
+RAG_TOP_K=10
+```
+
+> **Security Note**: All `.env` and `.env.*` files are excluded from Git via `.gitignore`.
+
+---
+
+## 🛠️ Development & Debug Tools
+
+To inspect the intermediate stages of the Hybrid RAG pipeline, use the diagnostic endpoint:
+
+`POST http://localhost:5000/api/debug/recommend-flow`
+
+**Payload:**
+```json
+{
+  "message": "I am a college student needing scholarship in Tamil Nadu",
+  "language": "en"
+}
+```
+
+**Response:**
+```json
+{
+  "query": "I am a college student needing scholarship in Tamil Nadu",
+  "extractedProfile": { "occupation": "student", "is_student": true, "state": "Tamil Nadu" },
+  "ragCandidates": [
+    { "schemeId": "post-matric-scholarship-15", "similarity": 0.89, "name": "Post-Matric Scholarship" }
+  ],
+  "structuredCandidates": [
+    { "schemeId": "post-matric-scholarship-15", "name": "Post-Matric Scholarship" }
+  ],
+  "mergedCandidateIds": ["post-matric-scholarship-15"],
+  "eligibilityResults": [ ... ]
+}
+```
+
+---
+
+## 🚀 How to Run Locally
+
+### 1. Run Backend Server & Tests
 
 ```bash
 cd backend
 npm install
-```
-
-#### Environment Variables (`backend/.env`):
-```env
-PORT=5000
-GEMINI_API_KEY=your_gemini_api_key_here
-```
-> **Note**: If `GEMINI_API_KEY` is not provided, the backend automatically switches to its built-in deterministic heuristic extractor, allowing immediate testing without an API key!
-
-Start the backend server:
-```bash
-npm start
-# or for auto-reloading dev mode:
+npm test
 npm run dev
 ```
-Backend will run at: **`http://localhost:5000`**
 
----
+Runs on: **`http://localhost:5000`**
 
-### 2. Frontend Setup
+### 2. Run Frontend Client
 
-In a new terminal window:
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-Frontend will run at: **`http://localhost:3000`**
+
+Runs on: **`http://localhost:3000`**
 
 ---
 
-## 🧪 Current Features Implemented
+## 🧪 Test Suite
 
-- **Natural Language Intake**: Citizens can express their situation in plain English, Hindi, or mixed phrasing (e.g., *"I am a 35-year-old farmer in UP with 2 acres of land and 1.2 Lakh income"*).
-- **Preset Citizen Personas**: 1-click test buttons for Farmers, Widows, Students, Vendors, Savings for Girl Child, and Disabled Entrepreneurs.
-- **AI Structured Profile Extraction**: Gemini maps raw text to structured parameters (`age`, `gender`, `occupation`, `annual_income`, `land_holding_acres`, `state`, `category`, `marital_status`, `has_disability`, `is_student`, `is_bpl`).
-- **Deterministic Rules Evaluation**: Checks published eligibility guidelines without model hallucination.
-- **Color-Coded Status Badges**:
-  - 🟢 **Appears to meet published criteria**
-  - 🟡 **Potentially relevant (Requires missing information)**
-  - ⚪ **Does not meet published criteria**
-- **Interactive Citizen Profile Refinement**: Allows citizens/field operators to live-edit extracted values and recalculate results in real time.
-- **Interactive Required Documents Checklist**: Citizen can mark which documents they have prepared.
-- **Official Government Links**: Every scheme provides direct access to its verified government portal.
+Run the full automated test suite (25 tests across all engines):
+
+```bash
+cd backend
+npm test
+```
+
+* **Phase 3 Tests**: Eligibility Engine criteria matching & boundary tests.
+* **Phase 4 Tests**: Structured Scheme Search & catalog priority tests.
+* **Phase 5 Tests**: End-to-end NLU workflow & bilingual recommendation tests.
+* **RAG Workflow Tests**: Semantic phrasing, failing income criteria, hybrid fallback, candidate deduplication, and missing info handling.

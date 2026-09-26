@@ -1,6 +1,7 @@
 import { extractCitizenProfile, generateCitizenExplanation, detectLanguage } from "./geminiService.js";
-import { searchAndRecommendSchemes } from "./schemeSearchService.js";
+import { searchAndRecommendSchemes, loadSchemesData } from "./schemeSearchService.js";
 import { checkEligibility } from "./eligibilityService.js";
+import { searchCandidateSchemes } from "./ragService.js";
 
 const GREETING_WORDS = new Set(["hi", "hello", "hey", "help", "please", "namaste", "vanakkam", "வணக்கம்", "pranam", "test", "can", "you", "me"]);
 
@@ -146,7 +147,13 @@ export function identifyMissingInformation(profile = {}, language = "en") {
 }
 
 /**
- * Executes the complete End-to-End Recommendation Workflow with Bilingual Intelligence.
+ * Executes the complete End-to-End Hybrid Recommendation Workflow:
+ * 1. Gemini / heuristic NLU -> structured profile extraction
+ * 2. RAG Semantic Retrieval -> Candidate schemes based on natural language meaning
+ * 3. Structured search -> Candidate schemes based on rule/keyword matching
+ * 4. Merge & Deduplicate candidates
+ * 5. Deterministic eligibility engine -> Checks published criteria (Pass, Fail, Missing)
+ * 6. Return verified results
  */
 export async function processCitizenRecommendation(userMessage, preferredLanguage = null, existingProfile = {}) {
   if (!userMessage || typeof userMessage !== "string" || !userMessage.trim()) {
@@ -168,7 +175,6 @@ export async function processCitizenRecommendation(userMessage, preferredLanguag
     ...rawProfile
   };
 
-  // If existingProfile had explicit values and rawProfile didn't override with valid ones, preserve them
   if (existingProfile && typeof existingProfile === "object") {
     for (const [k, v] of Object.entries(existingProfile)) {
       if (v !== undefined && v !== null && (mergedProfile[k] === undefined || mergedProfile[k] === null)) {
@@ -209,25 +215,125 @@ export async function processCitizenRecommendation(userMessage, preferredLanguag
     };
   }
 
-  // Step 4: Search schemes deterministically
-  const candidateSchemes = searchAndRecommendSchemes(validatedProfile);
+  // Load schemes from schemes.json
+  const allSchemes = loadSchemesData();
+  const schemesById = new Map(allSchemes.map(s => [s.id, s]));
 
-  // Step 5: Format response strictly per specification
-  const formattedResults = candidateSchemes.map((item) => {
+  // Step 4: Hybrid Candidate Retrieval (RAG Semantic Search + Structured Search)
+  let ragCandidates = [];
+  try {
+    const ragResult = await searchCandidateSchemes(userMessage);
+    ragCandidates = ragResult.candidates || [];
+    console.log(`[Workflow] RAG retrieved ${ragCandidates.length} semantic candidate(s).`);
+  } catch (ragErr) {
+    console.warn("[Workflow] RAG search encountered error, falling back strictly to structured search:", ragErr.message);
+    ragCandidates = [];
+  }
+
+  // Run existing structured search (filter strictly to topic/keyword/occupation relevant candidates)
+  const structuredResults = searchAndRecommendSchemes(validatedProfile, allSchemes)
+    .filter(s => s.topicRelevanceScore > 0);
+  console.log(`[Workflow] Structured search retrieved ${structuredResults.length} topic-relevant candidate(s).`);
+
+  // Map topic scores for candidate sorting
+  const topicScoreMap = new Map();
+  structuredResults.forEach(s => topicScoreMap.set(s.id, s.topicRelevanceScore || 0));
+
+  // Merge and Deduplicate candidates preserving discovery order
+  const mergedCandidateIds = [];
+  const seenIds = new Set();
+
+  // Add RAG candidate IDs (semantically discovered get high priority score)
+  let rankBonus = 20;
+  for (const c of ragCandidates) {
+    if (c.schemeId && schemesById.has(c.schemeId)) {
+      topicScoreMap.set(c.schemeId, (topicScoreMap.get(c.schemeId) || 0) + rankBonus);
+      rankBonus = Math.max(5, rankBonus - 1);
+      if (!seenIds.has(c.schemeId)) {
+        seenIds.add(c.schemeId);
+        mergedCandidateIds.push(c.schemeId);
+      }
+    }
+  }
+
+  // Add structured search candidate IDs (keyword & rule discovered)
+  for (const s of structuredResults) {
+    if (s.id && !seenIds.has(s.id)) {
+      seenIds.add(s.id);
+      mergedCandidateIds.push(s.id);
+    }
+  }
+
+  // If neither RAG nor structured search found candidates, fallback to top scored candidate schemes
+  if (mergedCandidateIds.length === 0) {
+    const topScored = searchAndRecommendSchemes(validatedProfile, allSchemes).slice(0, 10);
+    topScored.forEach(s => mergedCandidateIds.push(s.id));
+  }
+
+  // Step 5: Deterministic Eligibility Engine Evaluation for candidate schemes
+  // IMPORTANT: Vector similarity is NEVER equated with eligibility.
+  const evaluatedCandidates = mergedCandidateIds.map((schemeId) => {
+    const fullScheme = schemesById.get(schemeId);
+    const eligibilityAnalysis = checkEligibility(validatedProfile, fullScheme);
+
+    return {
+      scheme: fullScheme,
+      eligibilityAnalysis,
+      potentialMatch: eligibilityAnalysis.potentialMatch,
+      matchedCriteria: eligibilityAnalysis.matchedCriteria,
+      failedCriteria: eligibilityAnalysis.failedCriteria,
+      missingCriteria: eligibilityAnalysis.missingCriteria,
+      matchCount: eligibilityAnalysis.matchCount,
+      totalApplicableCriteria: eligibilityAnalysis.totalApplicableCriteria
+    };
+  });
+
+  // Filter to only relevant schemes (eligible or potential matches)
+  // If some schemes are potential matches, filter out completely disqualified schemes
+  const potentialMatches = evaluatedCandidates.filter(item => item.potentialMatch === true);
+  const finalCandidates = potentialMatches.length > 0 ? potentialMatches : evaluatedCandidates;
+
+  // Step 6: Sort by deterministic eligibility outcome & topic relevance:
+  // 1. potentialMatch === true first
+  // 2. Topic/Semantic relevance score (descending)
+  // 3. Number of matched criteria (descending)
+  // 4. Failed criteria count (ascending)
+  finalCandidates.sort((a, b) => {
+    if (a.potentialMatch !== b.potentialMatch) {
+      return a.potentialMatch ? -1 : 1;
+    }
+    const aTopic = topicScoreMap.get(a.scheme.id) || 0;
+    const bTopic = topicScoreMap.get(b.scheme.id) || 0;
+    if (bTopic !== aTopic) {
+      return bTopic - aTopic;
+    }
+    if (b.matchCount !== a.matchCount) {
+      return b.matchCount - a.matchCount;
+    }
+    return a.failedCriteria.length - b.failedCriteria.length;
+  });
+
+  // Filter strictly to candidates that have topic/semantic relevance to the user's situation
+  const topicRelevant = finalCandidates.filter(item => (topicScoreMap.get(item.scheme.id) || 0) > 0);
+  const targetedResults = topicRelevant.length > 0 ? topicRelevant : finalCandidates.slice(0, 10);
+
+  // Step 7: Format response strictly per specification
+  const formattedResults = targetedResults.map((item) => {
+    const s = item.scheme;
     const schemeData = {
-      id: item.id,
-      name: item.name,
-      level: item.level,
-      state: item.state,
-      department: item.department,
-      category: item.category,
-      description: item.description,
-      benefits: item.benefits || [],
-      eligibility: item.eligibility || {},
-      requiredDocuments: item.requiredDocuments || [],
-      application: item.application || {},
-      source: item.source || {},
-      lastVerified: item.lastVerified || ""
+      id: s.id,
+      name: s.name,
+      level: s.level,
+      state: s.state,
+      department: s.department,
+      category: s.category,
+      description: s.description,
+      benefits: s.benefits || [],
+      eligibility: s.eligibility || {},
+      requiredDocuments: s.requiredDocuments || [],
+      application: s.application || {},
+      source: s.source || {},
+      lastVerified: s.lastVerified || ""
     };
 
     const missingCriteriaStrings = (item.missingCriteria || []).map(mc => {
@@ -247,8 +353,9 @@ export async function processCitizenRecommendation(userMessage, preferredLanguag
   });
 
   const needsMoreInformation = missingInfo.length > 0;
+  const potentialMatchCount = formattedResults.filter(r => r.eligibility.potentialMatch).length;
 
-  console.log(`[Workflow] Evaluation complete. Found ${formattedResults.length} schemes (${formattedResults.filter(r => r.eligibility.potentialMatch).length} potential matches).`);
+  console.log(`[Workflow] Evaluation complete. Merged ${formattedResults.length} candidate(s), found ${potentialMatchCount} potential match(es).`);
 
   return {
     needsMoreInformation,
@@ -258,3 +365,66 @@ export async function processCitizenRecommendation(userMessage, preferredLanguag
     results: formattedResults
   };
 }
+
+/**
+ * Diagnostic function for development/debug endpoint.
+ */
+export async function debugCitizenRecommendationFlow(userMessage, preferredLanguage = null, existingProfile = {}) {
+  const detectedLang = detectLanguage(userMessage);
+  const activeLanguage = preferredLanguage || detectedLang;
+
+  const rawProfile = await extractCitizenProfile(userMessage.trim());
+  const mergedProfile = { ...(existingProfile || {}), ...rawProfile, language: activeLanguage };
+  const validatedProfile = validateAndSanitizeProfile(mergedProfile);
+
+  const allSchemes = loadSchemesData();
+  const schemesById = new Map(allSchemes.map(s => [s.id, s]));
+
+  // 1. RAG Candidates
+  let ragResult = { query: userMessage, candidates: [] };
+  try {
+    ragResult = await searchCandidateSchemes(userMessage);
+  } catch (e) {
+    ragResult.error = e.message;
+  }
+
+  // 2. Structured Candidates
+  const structuredResults = searchAndRecommendSchemes(validatedProfile, allSchemes);
+
+  // 3. Merged
+  const mergedCandidateIds = [];
+  const seen = new Set();
+  (ragResult.candidates || []).forEach(c => {
+    if (!seen.has(c.schemeId)) {
+      seen.add(c.schemeId);
+      mergedCandidateIds.push(c.schemeId);
+    }
+  });
+  structuredResults.forEach(s => {
+    if (!seen.has(s.id)) {
+      seen.add(s.id);
+      mergedCandidateIds.push(s.id);
+    }
+  });
+
+  // 4. Eligibility Results
+  const eligibilityResults = mergedCandidateIds.map(id => {
+    const s = schemesById.get(id);
+    return {
+      schemeId: id,
+      schemeName: s?.name,
+      analysis: s ? checkEligibility(validatedProfile, s) : null
+    };
+  });
+
+  return {
+    query: userMessage,
+    language: activeLanguage,
+    extractedProfile: validatedProfile,
+    ragCandidates: ragResult.candidates || [],
+    structuredCandidates: structuredResults.map(s => ({ schemeId: s.id, name: s.name })),
+    mergedCandidateIds,
+    eligibilityResults
+  };
+}
+

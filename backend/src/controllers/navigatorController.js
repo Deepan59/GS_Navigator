@@ -1,12 +1,12 @@
 import { extractCitizenProfile, generateCitizenExplanation } from "../services/geminiService.js";
 import { evaluateEligibility, getVerifiedSchemes } from "../services/eligibilityEngine.js";
 import { searchAndRecommendSchemes } from "../../services/schemeSearchService.js";
-import { processCitizenRecommendation } from "../../services/recommendationWorkflowService.js";
+import { processCitizenRecommendation, debugCitizenRecommendationFlow } from "../../services/recommendationWorkflowService.js";
 
 /**
  * Phase 5 Endpoint: POST /api/recommend
  * Full end-to-end workflow:
- * Natural language message -> Gemini extraction -> Validation -> Deterministic eligibility check -> Ranked results
+ * Natural language message -> Gemini extraction -> Hybrid RAG/Structured -> Validation -> Deterministic eligibility check -> Ranked results
  */
 export async function handleCitizenRecommend(req, res) {
   try {
@@ -39,6 +39,24 @@ export async function handleCitizenRecommend(req, res) {
       profile: {},
       results: []
     });
+  }
+}
+
+/**
+ * Development / Debug Diagnostic Endpoint: POST /api/debug/recommend-flow
+ * Inspects all intermediate stages of the Hybrid RAG pipeline.
+ */
+export async function handleDebugRecommendFlow(req, res) {
+  try {
+    const { message, language, profile } = req.body || {};
+    if (!message || typeof message !== "string") {
+      return res.status(400).json({ error: "Provide a valid 'message' string for debug analysis." });
+    }
+    const debugInfo = await debugCitizenRecommendationFlow(message, language, profile);
+    return res.json(debugInfo);
+  } catch (error) {
+    console.error("[Controller] Error in handleDebugRecommendFlow:", error);
+    return res.status(500).json({ error: error.message });
   }
 }
 

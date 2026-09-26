@@ -35,6 +35,13 @@ export function loadSchemesData() {
  * @param {Array} [allSchemes] - Optional override of schemes catalog
  * @returns {Array} List of discovered schemes with attached eligibility analysis
  */
+const STOP_WORDS = new Set([
+  "a", "an", "the", "and", "or", "but", "if", "then", "else", "when", "at", "from", "by", "for", "with", "about", "against", "between", "into", "through", "during", "before", "after", "above", "below", "to", "of", "up", "down", "in", "out", "on", "off", "over", "under", "again", "further", "once", "here", "there", "all", "any", "both", "each", "few", "more", "most", "other", "some", "such", "no", "nor", "not", "only", "own", "same", "so", "than", "too", "very", "can", "will", "just", "should", "now", "i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", "yourself", "yourselves", "he", "him", "his", "himself", "she", "her", "hers", "herself", "it", "its", "itself", "they", "them", "their", "theirs", "themselves", "what", "which", "who", "whom", "this", "that", "these", "those", "am", "is", "are", "was", "were", "be", "been", "being", "have", "has", "had", "having", "do", "does", "did", "doing", "would", "could", "i'm", "you're", "he's", "she's", "it's", "we're", "they're", "need", "needs", "want", "wants", "wanted", "please", "help", "give", "get", "getting", "struggle", "face", "facing", "request", "purpose", "like", "tell", "show", "find", "looking", "look", "avail", "available", "support", "scheme", "schemes", "government", "govt", "state", "center", "central"
+]);
+
+/**
+ * Searches and discovers candidate schemes based on citizen profile and intent.
+ */
 export function searchAndRecommendSchemes(citizenProfile = {}, allSchemes = null) {
   const schemes = allSchemes || loadSchemesData();
 
@@ -50,29 +57,36 @@ export function searchAndRecommendSchemes(citizenProfile = {}, allSchemes = null
     ""
   ).toLowerCase().trim();
 
-  const userKeywords = queryText ? queryText.split(/\s+/).filter(w => w.length > 2) : [];
+  const rawKeywords = queryText ? queryText.replace(/[^a-z0-9\s\u0B80-\u0BFF]/g, " ").split(/\s+/).filter(w => w.length >= 3) : [];
+  const userKeywords = rawKeywords.filter(w => !STOP_WORDS.has(w));
+
   const userOccupation = (citizenProfile.occupation || "").toLowerCase().trim();
   const userCategory = (citizenProfile.category || "").toLowerCase().trim();
   const userState = (citizenProfile.state || citizenProfile.residence || "").toLowerCase().trim();
-  const isStudent = citizenProfile.is_student === true || citizenProfile.student === true || userOccupation.includes("student");
+  const isStudent = citizenProfile.is_student === true || citizenProfile.student === true || userOccupation.includes("student") || queryText.includes("student") || queryText.includes("college") || queryText.includes("hostel") || queryText.includes("tuition") || queryText.includes("tution") || queryText.includes("scholarship");
 
-  // Step 1: Filter and score candidate schemes
+  // Step 1: Filter and score candidate schemes based on topic relevance
   const scoredSchemes = schemes.map((scheme) => {
-    let relevanceScore = 0;
+    let topicRelevanceScore = 0;
     const schemeText = [
       scheme.name,
-      scheme.department,
       scheme.category,
       scheme.description,
-      ...(scheme.benefits || []),
-      ...(scheme.eligibility?.otherConditions || [])
+      ...(scheme.benefits || [])
     ].join(" ").toLowerCase();
 
-    // 1. Purpose / Intent / Keyword match
+    // 1. Purpose / Intent / Meaningful Keyword match (using word boundary to avoid false substring matches like "tution" in "institutions")
     if (userKeywords.length > 0) {
       userKeywords.forEach(keyword => {
-        if (schemeText.includes(keyword)) {
-          relevanceScore += 3;
+        try {
+          const regex = new RegExp(`\\b${keyword}\\b`, "i");
+          if (regex.test(schemeText)) {
+            topicRelevanceScore += 8;
+          }
+        } catch (e) {
+          if (schemeText.includes(keyword)) {
+            topicRelevanceScore += 5;
+          }
         }
       });
     }
@@ -81,7 +95,7 @@ export function searchAndRecommendSchemes(citizenProfile = {}, allSchemes = null
     if (citizenProfile.preferred_category || citizenProfile.categoryInterest) {
       const prefCat = (citizenProfile.preferred_category || citizenProfile.categoryInterest).toLowerCase();
       if ((scheme.category || "").toLowerCase().includes(prefCat)) {
-        relevanceScore += 5;
+        topicRelevanceScore += 5;
       }
     }
 
@@ -92,39 +106,39 @@ export function searchAndRecommendSchemes(citizenProfile = {}, allSchemes = null
         return norm.includes(userOccupation) || userOccupation.includes(norm);
       });
       if (matchOcc) {
-        relevanceScore += 5;
+        topicRelevanceScore += 5;
       }
     }
 
-    // 4. Student status matching
-    if (isStudent && (scheme.category?.toLowerCase().includes("education") || scheme.eligibility?.student === true)) {
-      relevanceScore += 4;
+    // 4. Student status / education intent matching
+    if (isStudent && (scheme.category?.toLowerCase().includes("education") || scheme.eligibility?.student === true || schemeText.includes("student") || schemeText.includes("hostel") || schemeText.includes("scholarship") || schemeText.includes("tuition"))) {
+      topicRelevanceScore += 6;
     }
 
     // 5. State / Geographic relevance
+    let geographicScore = 0;
     const schemeStates = (scheme.eligibility?.states || []).map(s => s.toLowerCase());
     if (scheme.level?.toLowerCase() === "central" || schemeStates.includes("all") || schemeStates.includes("india")) {
-      relevanceScore += 1;
+      geographicScore += 1;
     } else if (userState && schemeStates.some(s => s.includes(userState) || userState.includes(s))) {
-      relevanceScore += 2;
+      geographicScore += 2;
     }
 
     // Step 2: Run deterministic eligibility analysis
     const eligibilityAnalysis = checkEligibility(citizenProfile, scheme);
 
-    // Boost score if potentialMatch is true
+    let finalScore = topicRelevanceScore;
     if (eligibilityAnalysis.potentialMatch) {
-      relevanceScore += (eligibilityAnalysis.matchCount * 2);
+      finalScore += (eligibilityAnalysis.matchCount * 2) + geographicScore;
     } else {
-      // Disqualified scheme gets negative weight
-      relevanceScore -= 10;
+      finalScore -= 10;
     }
 
     return {
       ...scheme,
-      relevanceScore,
+      relevanceScore: finalScore,
+      topicRelevanceScore,
       eligibilityAnalysis,
-      // Top-level aliases for direct frontend/API consumption
       potentialMatch: eligibilityAnalysis.potentialMatch,
       matchedCriteria: eligibilityAnalysis.matchedCriteria,
       failedCriteria: eligibilityAnalysis.failedCriteria,

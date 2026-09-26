@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
-    "test": "node tests/eligibilityService.test.js && node tests/schemeSearchService.test.js && node tests/recommendationWorkflow.test.js"
+    "build:rag": "node scripts/buildRagIndex.js",
+    "test": "node tests/eligibilityService.test.js && node tests/schemeSearchService.test.js && node tests/recommendationWorkflow.test.js && node tests/ragWorkflow.test.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
