@@ -247,11 +247,11 @@ export default function CitizenAssistantChat({
               <p className="text-xs text-slate-500 leading-relaxed">
                 {hasExtractedDetails
                   ? (language === "ta"
-                      ? "உங்கள் அடிப்படை விவரங்கள் பதியப்பட்டுள்ளன. இப்போது உங்களுக்கு என்ன உதவி தேவை என்பதை விவரிக்கவும் (எ.கா: கல்வி உதவி, கடன் மானியம், மருத்துவ உதவி)."
-                      : "We've captured your basic profile! Now tell us what assistance you're seeking (e.g. scholarship, crop damage relief, business loan, pension).")
+                      ? "உங்கள் அடிப்படை விவரங்கள் பதியப்பட்டுள்ளன. உங்களுக்கு என்ன உதவி தேவை என்பதை தமிழ், Tanglish அல்லது ஆங்கிலத்தில் விவரிக்கவும் (எ.கா: 'kalloori hostel matrum scholarship thevai', 'vivasayi payir sedham')."
+                      : "We've captured your basic profile! Now describe your need in English, தமிழ், or Tanglish (e.g. 'enakku kalloori hostel thevai', 'scholarship assistance', 'crop damage relief').")
                   : (language === "ta"
-                      ? "கல்லூரி படிப்பு உதவி, பயிர் சேத நிவாரணம், மகளிர் தொழில் கடன் போன்ற உங்கள் தேவையை தமிழில் அல்லது ஆங்கிலத்தில் எழுதலாம்."
-                      : "Type your situation in everyday English or Tamil. We evaluate verified government criteria deterministically.")}
+                      ? "கல்லூரி படிப்பு, பயிர் சேதம், தொழில் கடன் போன்ற தேவைகளை தமிழ், Tanglish அல்லது ஆங்கிலத்தில் எழுதலாம்."
+                      : "Type your situation in everyday English, தமிழ், or Tanglish. We evaluate verified government criteria deterministically.")}
               </p>
             </div>
 

@@ -16,11 +16,11 @@ export const translations = {
     // Hero Section
     heroBadge: "🇮🇳 AI-Powered Public Welfare Discovery",
     heroTitle: "Find Government Schemes Based on Eligibility",
-    heroSubtitle: "Discover central and state government schemes tailored to your real-life needs. Tell us your situation in English or தமிழ், or explore by categories.",
+    heroSubtitle: "Discover central and state government schemes tailored to your real-life needs. Tell us your situation in English, தமிழ், or Tanglish, or explore by categories.",
     heroCta: "Find Schemes For You",
     heroStepsTitle: "Easy 3-Step Scheme Discovery",
     step1Title: "1. Enter Details",
-    step1Desc: "Share your age, occupation, income or need in plain language.",
+    step1Desc: "Share your age, occupation, income or need in English, Tamil, or Tanglish.",
     step2Title: "2. Deterministic Matching",
     step2Desc: "Our engine checks published government rules without guessing.",
     step3Title: "3. Apply on Official Portal",
@@ -30,6 +30,10 @@ export const translations = {
       {
         label: "🎓 College Student",
         query: "எனக்கு கல்லூரி படிப்புக்கு அரசு உதவி வேண்டும்."
+      },
+      {
+        label: "🗣️ Tanglish: College Hostel",
+        query: "enakku kalloori padikurathuku hostel matrum scholarship udhavi thevai."
       },
       {
         label: "🌾 Farmer Crop Damage",
@@ -68,8 +72,8 @@ export const translations = {
 
     // Chat Assistant
     chatTitle: "AI Assisted Scheme Discovery",
-    chatSubtitle: "Chat naturally in English or தமிழ். We extract your profile to evaluate published criteria.",
-    chatPlaceholder: "Describe your situation in English or தமிழ் (e.g. 'I am a 20 year old student in Tamil Nadu needing college scholarship')...",
+    chatSubtitle: "Chat naturally in English, தமிழ், or Tanglish. We extract your profile to evaluate published criteria.",
+    chatPlaceholder: "Describe your situation in English, தமிழ் or Tanglish (e.g. 'enakku kalloori padikurathuku hostel matrum scholarship thevai')...",
     chatSendBtn: "Find Schemes",
     chatEvaluating: "Evaluating published criteria against 100+ schemes...",
     chatResetBtn: "Clear",
@@ -95,7 +99,7 @@ export const translations = {
     // Results Page & Sidebar Filters
     resultsTitle: "Discovered Government Schemes",
     resultsSubtitle: "Evaluated strictly against published government guidelines.",
-    searchPlaceholder: "Search schemes by name, keyword, or benefits...",
+    searchPlaceholder: "Search schemes by keyword (English, தமிழ், or Tanglish)...",
     filterHeading: "Filter Schemes",
     clearFiltersBtn: "Clear All Filters",
     filterState: "State / Jurisdiction",
@@ -209,11 +213,11 @@ export const translations = {
     // Hero Section
     heroBadge: "🇮🇳 AI-மூலம் இயங்கும் நலத்திட்ட கண்டறிதல் தளம்",
     heroTitle: "உங்களுக்குரிய அரசு நலத்திட்டங்களை கண்டறியுங்கள்",
-    heroSubtitle: "மத்திய மற்றும் மாநில அரசு நலத்திட்டங்களை உங்கள் உண்மைத் தேவைகளுக்கேற்ப கண்டறியுங்கள். உங்கள் சூழ்நிலையை தமிழிலோ அல்லது ஆங்கிலத்திலோ பகிருங்கள்.",
+    heroSubtitle: "மத்திய மற்றும் மாநில அரசு நலத்திட்டங்களை உங்கள் உண்மைத் தேவைகளுக்கேற்ப கண்டறியுங்கள். உங்கள் சூழ்நிலையை தமிழ், Tanglish அல்லது ஆங்கிலத்தில் பகிருங்கள்.",
     heroCta: "உங்களுக்கான திட்டங்களை தேடுங்கள்",
     heroStepsTitle: "எளிதான 3-படி திட்ட கண்டறிதல்",
     step1Title: "1. விவரங்களை உள்ளிடுக",
-    step1Desc: "உங்கள் வயது, தொழில், வருமானம் அல்லது தேவையை எளிய தமிழில் பகிருங்கள்.",
+    step1Desc: "உங்கள் வயது, தொழில், வருமானம் அல்லது தேவையை தமிழ், Tanglish அல்லது ஆங்கிலத்தில் பகிருங்கள்.",
     step2Title: "2. துல்லியமான விதி சரிபார்ப்பு",
     step2Desc: "எங்கள் தளம் அரசு விதிகளோடு ஒப்பிட்டு துல்லியமாக சரிபார்க்கிறது.",
     step3Title: "3. அதிகாரப்பூர்வ தளத்தில் விண்ணப்பிக்கவும்",
@@ -223,6 +227,10 @@ export const translations = {
       {
         label: "🎓 கல்லூரி படிப்பு உதவி",
         query: "எனக்கு கல்லூரி படிப்புக்கு அரசு உதவி வேண்டும்."
+      },
+      {
+        label: "🗣️ Tanglish: கல்லூரி & விடுதி",
+        query: "enakku kalloori padikurathuku hostel matrum scholarship udhavi thevai."
       },
       {
         label: "🌾 பயிர் சேதமடைந்த விவசாயி",
@@ -261,8 +269,8 @@ export const translations = {
 
     // Chat Assistant
     chatTitle: "AI நலத்திட்ட வழிகாட்டி உரையாடல்",
-    chatSubtitle: "தமிழில் அல்லது ஆங்கிலத்தில் இயல்பாக உரையாடுங்கள். உங்கள் விவரங்களை நாங்கள் பகுப்பாய்வு செய்வோம்.",
-    chatPlaceholder: "உங்கள் நிலைமையை தமிழில் அல்லது ஆங்கிலத்தில் விவரிக்கவும் (எ.கா: 'நான் 20 வயது கல்லூரி மாணவி, எனக்கு மேற்படிப்புக்கு கல்வி உதவித்தொகை வேண்டும்')...",
+    chatSubtitle: "தமிழ், Tanglish அல்லது ஆங்கிலத்தில் இயல்பாக உரையாடுங்கள். உங்கள் விவரங்களை நாங்கள் பகுப்பாய்வு செய்வோம்.",
+    chatPlaceholder: "தமிழ், Tanglish அல்லது English-ல் எழுதவும் (எ.கா: 'enakku kalloori padikurathuku hostel matrum scholarship thevai')...",
     chatSendBtn: "திட்டங்களை காண்க",
     chatEvaluating: "100+ திட்டங்களின் அரசு விதிகள் மதிப்பீடு செய்யப்படுகின்றன...",
     chatResetBtn: "அழி",
@@ -288,7 +296,7 @@ export const translations = {
     // Results Page & Sidebar Filters
     resultsTitle: "கண்டறியப்பட்ட அரசு நலத்திட்டங்கள்",
     resultsSubtitle: "அரசு வெளியிட்டுள்ள வழிகாட்டு நெறிமுறைகளின்படி மதிப்பீடு செய்யப்பட்டுள்ளது.",
-    searchPlaceholder: "திட்ட பெயர், முக்கிய சொல் அல்லது பலன்கள் மூலம் தேடுங்கள்...",
+    searchPlaceholder: "திட்ட பெயர் அல்லது முக்கிய சொல் மூலம் தேடுங்கள் (English / தமிழ் / Tanglish)...",
     filterHeading: "வடிகட்டிகள்",
     clearFiltersBtn: "அனைத்து வடிகட்டிகளையும் நீக்கு",
     filterState: "மாநிலம் / ஆளுகை",

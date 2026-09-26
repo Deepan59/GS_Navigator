@@ -50,16 +50,48 @@ export function cosineSimilarity(vecA, vecB) {
  */
 const EMBEDDING_DIM = 256;
 
-// Domain concept mapping for robust bilingual semantic retrieval
+// Domain concept mapping for robust English, Tamil, and Tanglish (Romanized Tamil) semantic retrieval
 const CONCEPT_SYNONYMS = {
-  education: ["college", "school", "fees", "scholarship", "tuition", "study", "student", "hostel", "degree", "diploma", "engineering", "medical", "kalloori", "padipu", "கல்வி", "படிப்பு", "கல்லூரி", "மாணவர்", "மாணவி", "உதவித்தொகை"],
-  agriculture: ["farmer", "crop", "damage", "loss", "flood", "rain", "drip", "irrigation", "tractor", "fertilizer", "kisan", "vivasayi", "payir", "sedham", "வேளாண்மை", "விவசாயி", "பயிர்", "மழை", "சேதம்", "விவசாய"],
-  health: ["medical", "hospital", "surgery", "insurance", "treatment", "disease", "health", "doctor", "cmchis", "maruthuvam", "மருத்துவம்", "காப்பீடு", "சிகிச்சை", "அறுவை"],
-  women: ["woman", "women", "girl", "mother", "widow", "marriage", "sewing", "magalir", "urimai", "thogai", "pen", "மகளிர்", "பெண்", "விதவை", "திருமணம்", "தையல்"],
-  business: ["business", "msme", "loan", "subsidy", "entrepreneur", "shop", "vendor", "street", "svanidhi", "pmegp", "vishwakarma", "suya", "thozhil", "வணிகம்", "சுயதொழில்", "கடன்", "மானியம்"],
-  pension: ["pension", "old", "senior", "elderly", "destitute", "aged", "retirement", "ignops", "oap", "muthiyor", "முதியோர்", "ஓய்வூதியம்", "ஆதரவற்ற"],
-  disability: ["disability", "disabled", "handicapped", "wheelchair", "pwd", "assistive", "matruthranali", "மாற்றுத்திறனாளி"],
-  housing: ["house", "housing", "shelter", "pmay", "home", "veedu", "வீடு", "வீட்டுவசதி"]
+  education: [
+    "college", "school", "fees", "scholarship", "tuition", "study", "student", "hostel", "degree", "diploma", "engineering", "medical",
+    "kalloori", "padipu", "padika", "padikka", "manavan", "manavi", "kalvi", "viduthi", "thangum", "kattanam", "udhavi", "udhavithogai",
+    "கல்வி", "படிப்பு", "கல்லூரி", "மாணவர்", "மாணவி", "உதவித்தொகை", "விடுதி", "கட்டணம்"
+  ],
+  agriculture: [
+    "farmer", "crop", "damage", "loss", "flood", "rain", "drip", "irrigation", "tractor", "fertilizer", "kisan", "disaster",
+    "vivasayi", "vivasayam", "payir", "sedham", "sedhamadainthullathu", "mazhai", "sottuneer", "paasanam", "nivaaranam", "kaappeedu",
+    "வேளாண்மை", "விவசாயி", "பயிர்", "மழை", "சேதம்", "விவசாய", "பாசனம்", "நிவாரணம்"
+  ],
+  health: [
+    "medical", "hospital", "surgery", "insurance", "treatment", "disease", "health", "doctor", "cmchis",
+    "maruthuvam", "kaappeedu", "chikitsai", "aruvai", "ilavasa", "noi", "aaspathiri", "aaspathri",
+    "மருத்துவம்", "காப்பீடு", "சிகிச்சை", "அறுவை", "இலவச"
+  ],
+  women: [
+    "woman", "women", "girl", "mother", "widow", "marriage", "sewing", "pudhumai", "penn",
+    "magalir", "urimai", "thogai", "pen", "pengal", "thaiyal", "iyanthiram", "thirumanam", "vithavai", "kudumbathalaivi",
+    "மகளிர்", "பெண்", "விதவை", "திருமணம்", "தையல்", "உரிமை", "தொகை", "புதுமைப்பெண்"
+  ],
+  business: [
+    "business", "msme", "loan", "subsidy", "entrepreneur", "shop", "vendor", "street", "svanidhi", "pmegp", "vishwakarma", "artisan",
+    "suya", "thozhil", "kadan", "maniyam", "viyabari", "kadaikaran", "salaiyora", "kaiyila", "kaippani",
+    "வணிகம்", "சுயதொழில்", "கடன்", "மானியம்", "வியாபாரி", "கைவினைஞர்"
+  ],
+  pension: [
+    "pension", "old", "senior", "elderly", "destitute", "aged", "retirement", "ignops", "oap",
+    "muthiyor", "vayadhu", "oivoodhiyam", "aatharavatra", "periyavar",
+    "முதியோர்", "ஓய்வூதியம்", "ஆதரவற்ற", "வயதான"
+  ],
+  disability: [
+    "disability", "disabled", "handicapped", "wheelchair", "pwd", "assistive", "locomotor",
+    "matruthranali", "oonam", "kaal", "paarvai", "chevadu",
+    "மாற்றுத்திறனாளி", "ஊனம்", "சக்கரநாற்காலி"
+  ],
+  housing: [
+    "house", "housing", "shelter", "pmay", "home", "building",
+    "veedu", "kudisai", "kattadam", "veetuvsathi",
+    "வீடு", "வீட்டுவசதி", "குடிசை"
+  ]
 };
 
 function deterministicFallbackEmbedding(text = "") {
