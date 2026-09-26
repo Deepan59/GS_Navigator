@@ -32,7 +32,7 @@ export const translations = {
         query: "எனக்கு கல்லூரி படிப்புக்கு அரசு உதவி வேண்டும்."
       },
       {
-        label: "🗣️ Tanglish: College Hostel",
+        label: "🏨 College Hostel",
         query: "enakku kalloori padikurathuku hostel matrum scholarship udhavi thevai."
       },
       {
@@ -120,9 +120,9 @@ export const translations = {
     officialWebsiteBtn: "Apply on Official Portal",
     
     // Status Badges & Compliant Wording
-    statusAppearsEligible: "You appear to meet published criteria",
-    statusPotentiallyEligible: "Potentially relevant scheme",
-    statusDisqualified: "Does not meet published criteria",
+    statusAppearsEligible: "Appears Eligible",
+    statusPotentiallyEligible: "Info Needed",
+    statusDisqualified: "Not Eligible",
     
     // Basic Details Intake (Step 1)
     basicDetails: {
@@ -229,7 +229,7 @@ export const translations = {
         query: "எனக்கு கல்லூரி படிப்புக்கு அரசு உதவி வேண்டும்."
       },
       {
-        label: "🗣️ Tanglish: கல்லூரி & விடுதி",
+        label: "🏨 கல்லூரி & விடுதி உதவி",
         query: "enakku kalloori padikurathuku hostel matrum scholarship udhavi thevai."
       },
       {
@@ -317,9 +317,9 @@ export const translations = {
     officialWebsiteBtn: "அதிகாரப்பூர்வ இணையதளத்தில் விண்ணப்பிக்கவும்",
     
     // Status Badges & Compliant Wording
-    statusAppearsEligible: "வெளியிடப்பட்ட தகுதி விதிகளுடன் நீங்கள் பொருந்துகிறீர்கள்",
-    statusPotentiallyEligible: "சாத்தியமான பொருத்தமுள்ள திட்டம்",
-    statusDisqualified: "வெளியிடப்பட்ட தகுதி விதிகளுடன் பொருந்தவில்லை",
+    statusAppearsEligible: "பொருத்தமானது",
+    statusPotentiallyEligible: "விவரம் தேவை",
+    statusDisqualified: "பொருந்தவில்லை",
     
     // Basic Details Intake (Step 1)
     basicDetails: {

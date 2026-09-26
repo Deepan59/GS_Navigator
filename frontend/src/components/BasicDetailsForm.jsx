@@ -104,19 +104,19 @@ export default function BasicDetailsForm({
   ];
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden transition-all">
+    <div className="bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden transition-all">
       {/* Header Banner */}
-      <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white px-6 py-6 sm:px-8 border-b border-slate-800">
-        <div className="flex flex-wrap items-center justify-between gap-4">
+      <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white px-4 py-4 sm:px-8 sm:py-6 border-b border-slate-800">
+        <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4">
           <div className="space-y-1">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/30 border border-blue-400/30 text-blue-300 text-xs font-semibold uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5" />
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-blue-600/30 border border-blue-400/30 text-blue-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wider">
+              <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
               <span>{b.stepBadge || "Step 1 of 2: Basic Profile"}</span>
             </div>
-            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+            <h2 className="text-lg sm:text-2xl font-bold text-white tracking-tight">
               {b.title || "Tell Us About Yourself"}
             </h2>
-            <p className="text-xs sm:text-sm text-slate-300 max-w-2xl">
+            <p className="text-[11px] sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
               {b.subtitle || "Enter your basic parameters first so we can accurately check eligibility criteria across 100+ central & Tamil Nadu schemes."}
             </p>
           </div>
@@ -124,25 +124,25 @@ export default function BasicDetailsForm({
           <button
             type="button"
             onClick={onSkipToChat}
-            className="text-xs text-slate-400 hover:text-white underline underline-offset-4 cursor-pointer transition-colors"
+            className="text-[11px] sm:text-xs text-slate-400 hover:text-white underline underline-offset-4 cursor-pointer transition-colors"
           >
             {b.skipToChat || "Skip to Chat directly"}
           </button>
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="p-6 sm:p-8 space-y-8">
-        {/* Grid of Inputs */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      <form onSubmit={handleSubmit} className="p-4 sm:p-8 space-y-6 sm:space-y-8">
+        {/* Grid of Core Parameters */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8">
           
           {/* 1. Age Input with Presets */}
-          <div className="space-y-3">
+          <div className="space-y-2.5">
             <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
               <Calendar className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span>{b.ageLabel || "Your Age (Years)"}</span>
               <span className="text-red-500">*</span>
             </label>
-            <div className="flex items-center gap-3">
+            <div className="space-y-2">
               <input
                 type="number"
                 min="1"
@@ -151,19 +151,19 @@ export default function BasicDetailsForm({
                 onChange={(e) => setAge(e.target.value)}
                 placeholder={b.agePlaceholder || "e.g. 21"}
                 required
-                className="w-32 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white dark:focus:bg-slate-800 transition-all"
+                className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-semibold text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white dark:focus:bg-slate-800 transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
               />
               {/* Quick Age Presets */}
-              <div className="flex flex-wrap gap-1.5 text-xs">
+              <div className="grid grid-cols-5 gap-1.5">
                 {["18", "21", "30", "45", "60"].map((preset) => (
                   <button
                     key={preset}
                     type="button"
                     onClick={() => setAge(preset)}
-                    className={`px-2.5 py-1.5 rounded-lg border font-medium cursor-pointer transition-colors ${
+                    className={`py-1.5 text-center rounded-lg border text-[11px] sm:text-xs font-semibold cursor-pointer transition-colors ${
                       age === preset
-                        ? "bg-blue-700 text-white border-blue-700 font-bold"
-                        : "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700"
+                        ? "bg-blue-700 text-white border-blue-700 font-bold shadow-xs"
+                        : "bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700"
                     }`}
                   >
                     {preset} yrs
@@ -174,13 +174,13 @@ export default function BasicDetailsForm({
           </div>
 
           {/* 2. Gender Selection */}
-          <div className="space-y-3">
+          <div className="space-y-2.5">
             <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
               <User className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span>{b.genderLabel || "Gender"}</span>
               <span className="text-red-500">*</span>
             </label>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
               {[
                 { key: "male", label: b.genderMale || "Male", icon: "👨" },
                 { key: "female", label: b.genderFemale || "Female", icon: "👩" },
@@ -190,21 +190,21 @@ export default function BasicDetailsForm({
                   key={item.key}
                   type="button"
                   onClick={() => setGender(item.key)}
-                  className={`py-2.5 px-3 rounded-xl border text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 cursor-pointer transition-all ${
+                  className={`py-2 px-1 sm:py-2.5 sm:px-3 rounded-xl border flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 cursor-pointer transition-all ${
                     gender === item.key
-                      ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 shadow-xs"
-                      : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
+                      ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 shadow-xs font-bold"
+                      : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 font-semibold"
                   }`}
                 >
-                  <span>{item.icon}</span>
-                  <span>{item.label}</span>
+                  <span className="text-sm sm:text-base shrink-0">{item.icon}</span>
+                  <span className="text-[11px] sm:text-xs md:text-sm leading-tight text-center truncate">{item.label}</span>
                 </button>
               ))}
             </div>
           </div>
 
           {/* 3. State / UT Selection */}
-          <div className="space-y-3">
+          <div className="space-y-2.5">
             <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
               <MapPin className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span>{b.stateLabel || "State / UT of Residence"}</span>
@@ -226,24 +226,24 @@ export default function BasicDetailsForm({
           </div>
 
           {/* 4. Social Category */}
-          <div className="space-y-3">
+          <div className="space-y-2.5">
             <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
               <Award className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span>{b.categoryLabel || "Social Category / Caste Group"}</span>
             </label>
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5 sm:gap-2">
               {categoryOptions.map((cat) => (
                 <button
                   key={cat.key}
                   type="button"
                   onClick={() => setCategory(cat.key)}
-                  className={`px-3 py-2 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${
+                  className={`p-2 rounded-xl border text-[11px] sm:text-xs font-semibold text-center cursor-pointer transition-all flex items-center justify-center ${
                     category === cat.key
-                      ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30"
+                      ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 font-bold"
                       : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
                   }`}
                 >
-                  {cat.label}
+                  <span className="leading-tight">{cat.label}</span>
                 </button>
               ))}
             </div>
@@ -257,20 +257,20 @@ export default function BasicDetailsForm({
             <span>{b.occupationLabel || "Primary Occupation / Status"}</span>
             <span className="text-red-500">*</span>
           </label>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-2.5">
             {occupationsList.map((occ) => (
               <button
                 key={occ.key}
                 type="button"
                 onClick={() => setOccupation(occ.key)}
-                className={`p-3 rounded-2xl border text-left cursor-pointer transition-all flex items-center gap-2.5 ${
+                className={`p-2.5 sm:p-3 rounded-xl sm:rounded-2xl border text-left cursor-pointer transition-all flex items-center gap-2 sm:gap-2.5 ${
                   occupation === occ.key
-                    ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 shadow-xs"
-                    : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
+                    ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 shadow-xs font-bold"
+                    : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 font-semibold"
                 }`}
               >
-                <span className="text-lg shrink-0">{occ.icon}</span>
-                <span className="text-xs sm:text-sm font-semibold leading-tight">{occ.label}</span>
+                <span className="text-base sm:text-lg shrink-0">{occ.icon}</span>
+                <span className="text-[11px] sm:text-xs md:text-sm leading-tight">{occ.label}</span>
               </button>
             ))}
           </div>
@@ -278,23 +278,23 @@ export default function BasicDetailsForm({
 
         {/* 6. Income Brackets */}
         <div className="space-y-3 pt-2">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
               <IndianRupee className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span>{b.incomeLabel || "Annual Household Income"}</span>
             </label>
-            <span className="text-xs text-blue-700 dark:text-blue-300 font-bold bg-blue-50 dark:bg-blue-900/40 px-2.5 py-0.5 rounded-full border border-blue-100 dark:border-blue-800">
+            <span className="text-[11px] sm:text-xs text-blue-700 dark:text-blue-300 font-bold bg-blue-50 dark:bg-blue-900/40 px-2.5 py-0.5 rounded-full border border-blue-100 dark:border-blue-800">
               Approx: ₹{Number(customIncome).toLocaleString("en-IN")} / yr
             </span>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-2.5">
             {incomeOptions.map((inc) => (
               <button
                 key={inc.key}
                 type="button"
                 onClick={() => handleIncomeSelect(inc.key)}
-                className={`p-3 rounded-2xl border text-left cursor-pointer transition-all ${
+                className={`p-2.5 sm:p-3 rounded-xl sm:rounded-2xl border text-left cursor-pointer transition-all ${
                   incomeBracket === inc.key
                     ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 shadow-xs"
                     : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
@@ -303,7 +303,7 @@ export default function BasicDetailsForm({
                 <div className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white leading-tight">
                   {inc.label}
                 </div>
-                <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">
+                <div className="text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 mt-1">
                   {inc.badge}
                 </div>
               </button>
@@ -317,13 +317,13 @@ export default function BasicDetailsForm({
             <HeartHandshake className="w-4 h-4 text-blue-600 dark:text-blue-400" />
             <span>{b.disabilityLabel || "Are you Differently-Abled (PwD)?"}</span>
           </label>
-          <div className="flex items-center gap-3">
+          <div className="grid grid-cols-2 gap-2 sm:max-w-xs">
             <button
               type="button"
               onClick={() => setHasDisability("no")}
-              className={`px-5 py-2 rounded-xl border text-xs sm:text-sm font-semibold cursor-pointer transition-all ${
+              className={`py-2 px-4 rounded-xl border text-xs sm:text-sm font-semibold text-center cursor-pointer transition-all ${
                 hasDisability === "no"
-                  ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30"
+                  ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 font-bold"
                   : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
               }`}
             >
@@ -332,9 +332,9 @@ export default function BasicDetailsForm({
             <button
               type="button"
               onClick={() => setHasDisability("yes")}
-              className={`px-5 py-2 rounded-xl border text-xs sm:text-sm font-semibold cursor-pointer transition-all ${
+              className={`py-2 px-4 rounded-xl border text-xs sm:text-sm font-semibold text-center cursor-pointer transition-all ${
                 hasDisability === "yes"
-                  ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30"
+                  ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 font-bold"
                   : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
               }`}
             >
@@ -346,7 +346,7 @@ export default function BasicDetailsForm({
         {/* Submit / Proceed Button */}
         <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-            <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+            <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
             <span>{language === "ta" ? "உங்கள் தகவல்கள் பாதுகாப்பானது & அரசு விதிகளோடு மட்டுமே ஒப்பிடப்படும்." : "Details remain strictly private & evaluated against official criteria."}</span>
           </div>
 

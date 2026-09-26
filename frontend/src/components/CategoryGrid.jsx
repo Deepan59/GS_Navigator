@@ -145,7 +145,7 @@ export default function CategoryGrid({ onSelectCategory }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3">
         {CORE_CATEGORIES.map((cat) => {
           const IconComponent = cat.icon;
           const displayName = language === "ta" ? cat.nameTa : cat.nameEn;
@@ -154,18 +154,18 @@ export default function CategoryGrid({ onSelectCategory }) {
             <button
               key={cat.id}
               onClick={() => onSelectCategory(cat.filterTerm)}
-              className={`p-3.5 rounded-2xl border transition-all text-left flex flex-col justify-between gap-3 shadow-2xs hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer dark:bg-slate-900/80 dark:border-slate-800 dark:text-slate-100 dark:hover:border-slate-700 ${cat.bg}`}
+              className={`p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl border transition-all text-left flex flex-col justify-between gap-2.5 sm:gap-3 shadow-2xs hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer dark:bg-slate-900/80 dark:border-slate-800 dark:text-slate-100 dark:hover:border-slate-700 ${cat.bg}`}
             >
               <div className="flex items-center justify-between w-full">
-                <div className={`w-9 h-9 rounded-xl flex items-center justify-center shadow-xs ${cat.iconBg}`}>
-                  <IconComponent className="w-5 h-5" />
+                <div className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center shadow-xs ${cat.iconBg}`}>
+                  <IconComponent className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-white/90 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200/60 dark:border-slate-700">
+                <span className="text-[10px] sm:text-[11px] font-bold px-1.5 py-0.5 rounded-full bg-white/90 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200/60 dark:border-slate-700">
                   {cat.count}
                 </span>
               </div>
               <div>
-                <h4 className="font-bold text-xs sm:text-sm leading-snug line-clamp-2 dark:text-white">
+                <h4 className="font-bold text-[11px] sm:text-xs md:text-sm leading-snug line-clamp-2 dark:text-white">
                   {displayName}
                 </h4>
               </div>

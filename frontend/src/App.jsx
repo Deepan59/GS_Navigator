@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import LandingHero from "./components/LandingHero";
-import CategoryGrid from "./components/CategoryGrid";
 import DisclaimerBanner from "./components/DisclaimerBanner";
 import BasicDetailsForm from "./components/BasicDetailsForm";
 import CitizenAssistantChat from "./components/CitizenAssistantChat";
@@ -129,25 +128,6 @@ export default function App() {
     document.getElementById("citizen-intake-section")?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleSelectCategoryFromGrid = (categoryTerm) => {
-    setSelectedCategoryFilter(categoryTerm);
-    setHasEvaluatedResults(true);
-    if (results.length === 0 && rawAllSchemes.length > 0) {
-      setResults(rawAllSchemes.map(s => ({
-        scheme: s,
-        eligibility: {
-          potentialMatch: true,
-          matchedCriteria: [],
-          failedCriteria: [],
-          missingCriteria: []
-        }
-      })));
-    }
-    setTimeout(() => {
-      document.getElementById("results-section")?.scrollIntoView({ behavior: "smooth" });
-    }, 200);
-  };
-
   const handleReset = () => {
     setCurrentStep("basic_details");
     setConversationHistory([]);
@@ -167,7 +147,7 @@ export default function App() {
         totalSchemes={totalCatalogCount}
       />
 
-      <main className="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6 sm:space-y-8">
+      <main className="flex-1 max-w-6xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8 space-y-4 sm:space-y-8 overflow-x-hidden">
         {/* Important Advisory Disclaimer Banner */}
         <DisclaimerBanner />
 
@@ -182,12 +162,7 @@ export default function App() {
           totalSchemes={totalCatalogCount}
         />
 
-        {/* 2. Explore by Categories (myScheme Category Grid) */}
-        <CategoryGrid
-          onSelectCategory={handleSelectCategoryFromGrid}
-        />
-
-        {/* 3. 2-Step Citizen Intake Section */}
+        {/* 2. 2-Step Citizen Intake Section */}
         <div id="citizen-intake-section">
           {currentStep === "basic_details" ? (
             <BasicDetailsForm

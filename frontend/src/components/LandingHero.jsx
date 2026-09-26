@@ -9,50 +9,50 @@ export default function LandingHero({ onStartAssistant, onSelectSamplePrompt, to
   return (
     <div className="space-y-6">
       {/* Hero Banner */}
-      <div className="bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
+      <div className="bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 text-white rounded-3xl p-5 sm:p-10 shadow-xl relative overflow-hidden">
         {/* Glow circles */}
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div className="relative z-10 max-w-3xl space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-blue-200 text-xs font-semibold tracking-wide backdrop-blur-sm">
+        <div className="relative z-10 max-w-3xl space-y-4 sm:space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-blue-200 text-[11px] sm:text-xs font-semibold tracking-wide backdrop-blur-sm">
             <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
             <span>{t("heroBadge")}</span>
           </div>
 
-          <div className="space-y-3">
-            <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+          <div className="space-y-2 sm:space-y-3">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
               {t("heroTitle")}
             </h1>
-            <p className="text-blue-100/90 text-sm sm:text-base leading-relaxed max-w-2xl font-normal">
+            <p className="text-blue-100/90 text-xs sm:text-base leading-relaxed max-w-2xl font-normal">
               {t("heroSubtitle")}
             </p>
           </div>
 
           {/* Action CTA */}
-          <div className="pt-2 flex flex-wrap items-center gap-4">
+          <div className="pt-1 flex flex-wrap items-center gap-3">
             <button
               onClick={onStartAssistant}
-              className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm sm:text-base shadow-lg shadow-emerald-900/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs sm:text-base shadow-lg shadow-emerald-900/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
             >
               <span>{t("heroCta")}</span>
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
 
-          {/* Quick Persona Chips */}
-          <div className="pt-4 border-t border-white/10 space-y-2">
-            <p className="text-xs text-blue-300 font-bold uppercase tracking-wider">
+          {/* Quick Persona Chips - 2 in one row */}
+          <div className="pt-3 border-t border-white/10 space-y-2">
+            <p className="text-[11px] sm:text-xs text-blue-300 font-bold uppercase tracking-wider">
               {t("heroPersonaLabel")}
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-2 gap-2 sm:gap-2.5">
               {personas.map((chip, idx) => (
                 <button
                   key={idx}
                   onClick={() => onSelectSamplePrompt(chip.query)}
-                  className="text-xs px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 text-blue-100 hover:text-white transition-all text-left font-medium cursor-pointer shadow-2xs"
+                  className="text-[11px] sm:text-xs px-2.5 py-2 sm:px-3 sm:py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 text-blue-100 hover:text-white transition-all text-left font-medium cursor-pointer shadow-2xs flex items-center gap-1.5 truncate"
                 >
-                  {chip.label}
+                  <span className="truncate">{chip.label}</span>
                 </button>
               ))}
             </div>
@@ -61,33 +61,33 @@ export default function LandingHero({ onStartAssistant, onSelectSamplePrompt, to
       </div>
 
       {/* 3-Step Scheme Discovery Process */}
-      <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-2xs space-y-4 transition-colors">
-        <h3 className="text-xs font-extrabold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+      <div className="bg-white dark:bg-slate-900 rounded-3xl p-4 sm:p-6 border border-slate-200 dark:border-slate-800 shadow-2xs space-y-3 sm:space-y-4 transition-colors">
+        <h3 className="text-[11px] sm:text-xs font-extrabold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
           {t("heroStepsTitle")}
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700/80 space-y-2">
-            <div className="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-4">
+          <div className="p-3 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700/80 space-y-1.5">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
               1
             </div>
-            <h4 className="font-bold text-sm text-slate-900 dark:text-white">{t("step1Title")}</h4>
-            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{t("step1Desc")}</p>
+            <h4 className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white">{t("step1Title")}</h4>
+            <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{t("step1Desc")}</p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700/80 space-y-2">
-            <div className="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
+          <div className="p-3 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700/80 space-y-1.5">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
               2
             </div>
-            <h4 className="font-bold text-sm text-slate-900 dark:text-white">{t("step2Title")}</h4>
-            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{t("step2Desc")}</p>
+            <h4 className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white">{t("step2Title")}</h4>
+            <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{t("step2Desc")}</p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700/80 space-y-2">
-            <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
+          <div className="p-3 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700/80 space-y-1.5">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
               3
             </div>
-            <h4 className="font-bold text-sm text-slate-900 dark:text-white">{t("step3Title")}</h4>
-            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{t("step3Desc")}</p>
+            <h4 className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white">{t("step3Title")}</h4>
+            <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{t("step3Desc")}</p>
           </div>
         </div>
       </div>

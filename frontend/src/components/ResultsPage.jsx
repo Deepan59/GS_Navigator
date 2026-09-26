@@ -10,6 +10,7 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
   const [selectedStateFilter, setSelectedStateFilter] = useState("all");
   const [selectedLevelFilter, setSelectedLevelFilter] = useState("all");
   const [sortBy, setSortBy] = useState("best_match");
+  const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
   const { t, language } = useLanguage();
 
   // Sync external category filter
@@ -129,12 +130,12 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
   const hasActiveFilters = selectedCategory !== "all" || selectedStateFilter !== "all" || selectedLevelFilter !== "all" || searchQuery !== "" || activeTab !== "all";
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       {/* Section Header with myScheme Tabs */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-3 sm:pb-4">
         <div>
-          <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-            <Sparkles className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+          <h2 className="text-lg sm:text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600 dark:text-emerald-400" />
             <span>{t("resultsTitle")}</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
@@ -142,31 +143,42 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
           </p>
         </div>
 
-        {/* Sort dropdown */}
-        <div className="flex items-center gap-2">
-          <label className="text-xs font-bold text-slate-500 dark:text-slate-400 whitespace-nowrap flex items-center gap-1">
-            <ArrowUpDown className="w-3.5 h-3.5" />
-            <span>{t("sortByLabel")}:</span>
-          </label>
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
-            className="px-3 py-1.5 text-xs bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl font-bold text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer shadow-2xs"
+        {/* Mobile Filter Toggle & Sort dropdown */}
+        <div className="flex items-center justify-between sm:justify-end gap-2">
+          <button
+            onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
+            className="lg:hidden inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 cursor-pointer"
           >
-            <option value="best_match">{t("sortBestMatch")}</option>
-            <option value="most_criteria">{t("sortMostCriteria")}</option>
-            <option value="alphabetical">{t("sortAlphabetical")}</option>
-          </select>
+            <Filter className="w-3.5 h-3.5 text-emerald-600" />
+            <span>{isMobileFilterOpen ? (language === "ta" ? "வடிகட்டி மறை" : "Hide Filters") : (language === "ta" ? "வடிகட்டிகள்" : "Filters")}</span>
+            {hasActiveFilters && <span className="w-2 h-2 rounded-full bg-emerald-500"></span>}
+          </button>
+
+          <div className="flex items-center gap-1.5">
+            <label className="text-xs font-bold text-slate-500 dark:text-slate-400 whitespace-nowrap hidden sm:flex items-center gap-1">
+              <ArrowUpDown className="w-3.5 h-3.5" />
+              <span>{t("sortByLabel")}:</span>
+            </label>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="px-2.5 py-1.5 text-xs bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl font-bold text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer shadow-2xs"
+            >
+              <option value="best_match">{t("sortBestMatch")}</option>
+              <option value="most_criteria">{t("sortMostCriteria")}</option>
+              <option value="alphabetical">{t("sortAlphabetical")}</option>
+            </select>
+          </div>
         </div>
       </div>
 
       {/* Main Container: Left Sidebar Filters + Right Results */}
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-        {/* Left Faceted Filters Sidebar */}
-        <div className="lg:col-span-1 space-y-4">
-          <div className="bg-white dark:bg-slate-900 p-5 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-2xs space-y-5">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6">
+        {/* Left Faceted Filters Sidebar (Responsive Collapse on Mobile) */}
+        <div className={`lg:col-span-1 space-y-4 ${isMobileFilterOpen ? "block" : "hidden lg:block"}`}>
+          <div className="bg-white dark:bg-slate-900 p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 shadow-2xs space-y-4 sm:space-y-5">
             <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
-              <span className="font-extrabold text-slate-900 dark:text-white text-sm flex items-center gap-1.5">
+              <span className="font-extrabold text-slate-900 dark:text-white text-xs sm:text-sm flex items-center gap-1.5">
                 <Filter className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                 <span>{t("filterHeading")}</span>
               </span>

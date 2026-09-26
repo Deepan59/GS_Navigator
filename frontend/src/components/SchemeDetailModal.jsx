@@ -63,46 +63,46 @@ export default function SchemeDetailModal({ scheme, onClose }) {
 
   return (
     <div 
-      className="fixed inset-0 z-[999] flex items-center justify-center p-3 sm:p-6 bg-black/70 backdrop-blur-sm"
+      className="fixed inset-0 z-[999] flex items-center justify-center p-2.5 sm:p-6 bg-black/70 backdrop-blur-sm"
       onClick={onClose}
     >
       <div 
-        className="bg-white dark:bg-slate-900 rounded-3xl max-w-3xl w-full max-h-[92vh] flex flex-col shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-all"
+        className="bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl max-w-3xl w-full max-h-[94vh] sm:max-h-[92vh] flex flex-col shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden transition-all"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="bg-slate-900 dark:bg-slate-950 text-white px-6 py-5 flex items-start justify-between gap-4 border-b border-slate-800">
+        <div className="bg-slate-900 dark:bg-slate-950 text-white px-4 py-3.5 sm:px-6 sm:py-5 flex items-start justify-between gap-3 border-b border-slate-800">
           <div className="space-y-1">
-            <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-              <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-600 text-white uppercase tracking-wider">
+            <div className="flex items-center gap-1.5 sm:gap-2 mb-1 flex-wrap">
+              <span className="px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-extrabold bg-emerald-600 text-white uppercase tracking-wider">
                 {scheme.level || "Tamil Nadu"}
               </span>
-              <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-slate-800 text-slate-300 uppercase tracking-wider border border-slate-700">
+              <span className="px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-extrabold bg-slate-800 text-slate-300 uppercase tracking-wider border border-slate-700">
                 {scheme.category || "General"}
               </span>
             </div>
-            <h2 className="text-xl sm:text-2xl font-extrabold leading-snug text-white">
+            <h2 className="text-base sm:text-2xl font-extrabold leading-snug text-white">
               {scheme.name}
             </h2>
-            <p className="text-xs text-slate-400 flex items-center gap-1.5 mt-1 font-medium">
+            <p className="text-[11px] sm:text-xs text-slate-400 flex items-center gap-1.5 mt-0.5 font-medium">
               <Building2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
               <span>{scheme.department || "Government Department"}</span>
             </p>
           </div>
           <button
             onClick={onClose}
-            className="w-9 h-9 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition-colors shrink-0 cursor-pointer border border-slate-700"
+            className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition-colors shrink-0 cursor-pointer border border-slate-700"
             title="Close modal"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
 
         {/* 4 Interactive Tabs */}
-        <div className="flex items-center border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/60 px-4 sm:px-6 overflow-x-auto gap-2 shrink-0">
+        <div className="flex items-center border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/60 px-3 sm:px-6 overflow-x-auto gap-1 sm:gap-2 shrink-0 no-scrollbar">
           <button
             onClick={() => setActiveTab("overview")}
-            className={`py-3 px-3 text-xs font-bold border-b-2 transition-all cursor-pointer whitespace-nowrap ${
+            className={`py-2.5 sm:py-3 px-2.5 sm:px-3 text-[11px] sm:text-xs font-bold border-b-2 transition-all cursor-pointer whitespace-nowrap ${
               activeTab === "overview"
                 ? "border-emerald-600 text-emerald-700 dark:text-emerald-400 font-extrabold"
                 : "border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
@@ -112,7 +112,7 @@ export default function SchemeDetailModal({ scheme, onClose }) {
           </button>
           <button
             onClick={() => setActiveTab("benefits")}
-            className={`py-3 px-3 text-xs font-bold border-b-2 transition-all cursor-pointer whitespace-nowrap ${
+            className={`py-2.5 sm:py-3 px-2.5 sm:px-3 text-[11px] sm:text-xs font-bold border-b-2 transition-all cursor-pointer whitespace-nowrap ${
               activeTab === "benefits"
                 ? "border-emerald-600 text-emerald-700 dark:text-emerald-400 font-extrabold"
                 : "border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
@@ -122,7 +122,7 @@ export default function SchemeDetailModal({ scheme, onClose }) {
           </button>
           <button
             onClick={() => setActiveTab("eligibility")}
-            className={`py-3 px-3 text-xs font-bold border-b-2 transition-all cursor-pointer whitespace-nowrap ${
+            className={`py-2.5 sm:py-3 px-2.5 sm:px-3 text-[11px] sm:text-xs font-bold border-b-2 transition-all cursor-pointer whitespace-nowrap ${
               activeTab === "eligibility"
                 ? "border-emerald-600 text-emerald-700 dark:text-emerald-400 font-extrabold"
                 : "border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
@@ -132,7 +132,7 @@ export default function SchemeDetailModal({ scheme, onClose }) {
           </button>
           <button
             onClick={() => setActiveTab("application")}
-            className={`py-3 px-3 text-xs font-bold border-b-2 transition-all cursor-pointer whitespace-nowrap ${
+            className={`py-2.5 sm:py-3 px-2.5 sm:px-3 text-[11px] sm:text-xs font-bold border-b-2 transition-all cursor-pointer whitespace-nowrap ${
               activeTab === "application"
                 ? "border-emerald-600 text-emerald-700 dark:text-emerald-400 font-extrabold"
                 : "border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
