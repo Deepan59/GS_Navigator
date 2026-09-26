@@ -1,4 +1,4 @@
-﻿import express from "express";
+import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
@@ -31,6 +31,16 @@ app.get("/api/health", (req, res) => {
 // API Routes
 app.use("/api", navigatorRoutes);
 
+// Serve Frontend static assets in production if dist exists
+const frontendDist = path.resolve(__dirname, "../../frontend/dist");
+app.use(express.static(frontendDist));
+app.get("*", (req, res, next) => {
+  if (req.path.startsWith("/api")) return next();
+  res.sendFile(path.join(frontendDist, "index.html"), (err) => {
+    if (err) next();
+  });
+});
+
 // Error Handler
 app.use((err, req, res, next) => {
   console.error("Unhandled Server Error:", err);
@@ -38,6 +48,6 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 GS Navigator Backend running on http://localhost:${PORT}`);
+  console.log(`🚀 GS Navigator running on port ${PORT}`);
   console.log(`🔑 Gemini API configured: ${process.env.GEMINI_API_KEY ? "YES" : "NO (Running heuristic fallback)"}`);
 });
