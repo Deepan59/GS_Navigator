@@ -1,0 +1,4477 @@
+[
+  {
+    "id": "kalaignar-magalir-urimai-thogai-1",
+    "name": "Kalaignar Magalir Urimai Thogai",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Women",
+    "description": "Rs.1,000/month direct benefit transfer to eligible women heads of families",
+    "benefits": [
+      "Rs.1,000/month direct benefit transfer to eligible women heads of families"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 250000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Woman should be head of family; specific exclusions apply (income tax payees, govt employees, etc.)"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Ration card / Smart card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.kmut.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://www.kmut.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "moovalur-ramamirtham-ammaiyar-marriage-assistance-2",
+    "name": "Moovalur Ramamirtham Ammaiyar Marriage Assistance",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Women",
+    "description": "Cash and gold assistance for marriage of poor girls",
+    "benefits": [
+      "Cash and gold assistance for marriage of poor girls"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 72000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Poor families with marriage-age daughters"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Income certificate",
+      "Educational qualification certificate",
+      "Marriage invitation"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "e-v-r-maniyammaiyar-widow-daughter-marriage-assistance-3",
+    "name": "E.V.R. Maniyammaiyar Widow Daughter Marriage Assistance",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Women",
+    "description": "Cash and gold assistance for marriage of a widow's daughter",
+    "benefits": [
+      "Cash and gold assistance for marriage of a widow's daughter"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 72000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Applicant must be a widow mother marrying her daughter"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Mother's Widow Certificate",
+      "Income certificate",
+      "Marriage invitation"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "annai-theresa-ammaiyar-orphan-girl-marriage-assistance-4",
+    "name": "Annai Theresa Ammaiyar Orphan Girl Marriage Assistance",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Women",
+    "description": "Cash and gold assistance for marriage of an orphan girl",
+    "benefits": [
+      "Cash and gold assistance for marriage of an orphan girl"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Orphan girl without parental support"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Orphan certificate from competent authority",
+      "Marriage invitation"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "dr-muthulakshmi-reddy-inter-caste-marriage-assistance-5",
+    "name": "Dr. Muthulakshmi Reddy Inter-caste Marriage Assistance",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Women",
+    "description": "Cash assistance to encourage inter-caste marriages",
+    "benefits": [
+      "Cash assistance to encourage inter-caste marriages"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Inter-caste marriage (One spouse SC/ST and other non-SC/ST, or Forward and BC/MBC)"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar cards of bride and groom",
+      "Community certificates of both spouses",
+      "Marriage registration certificate"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "dr-dharmambal-ammaiyar-widow-remarriage-assistance-6",
+    "name": "Dr. Dharmambal Ammaiyar Widow Remarriage Assistance",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Women",
+    "description": "Cash assistance for remarriage of widows",
+    "benefits": [
+      "Cash assistance for remarriage of widows"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 20,
+        "max": 30
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Widow remarriage; husband age below 40"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "First husband's death certificate",
+      "Remarriage certificate"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "girl-child-protection-scheme-7",
+    "name": "Girl Child Protection Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Women",
+    "description": "Rs.50,000 fixed deposit maturing after 18 years for a single girl child",
+    "benefits": [
+      "Rs.50,000 fixed deposit maturing after 18 years for a single girl child"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 0,
+        "max": 3
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 72000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Girl child born on/after 01/08/2011; family has only one or two girl children and no male child"
+      ]
+    },
+    "requiredDocuments": [
+      "Girl child birth certificate",
+      "Parents' Aadhaar cards",
+      "Income certificate",
+      "Sterilization certificate"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "vetri-payana-thittam-free-bus-travel-for-women-8",
+    "name": "Vetri Payana Thittam (Free Bus Travel for Women)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Transport Department",
+    "category": "Transport & Social Welfare",
+    "description": "Free travel for women and transgender persons on ordinary buses; extended to deluxe/express/mofussil buses from 2 Oct 2026",
+    "benefits": [
+      "Free travel for women and transgender persons on ordinary buses; extended to deluxe/express/mofussil buses from 2 Oct 2026"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Women, transgender persons, and differently-abled persons with escort"
+      ]
+    },
+    "requiredDocuments": [
+      "Direct travel / ID proof if requested"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Transport Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "thai-maaman-thanga-mothiram-thittam-9",
+    "name": "Thai Maaman Thanga Mothiram Thittam",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Health and Family Welfare Department",
+    "category": "Healthcare & Family Welfare",
+    "description": "1 gram gold ring for every newborn in Government hospitals, from 15 Sep 2026",
+    "benefits": [
+      "1 gram gold ring for every newborn in Government hospitals, from 15 Sep 2026"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 0,
+        "max": 0
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Child born in a Tamil Nadu Government hospital"
+      ]
+    },
+    "requiredDocuments": [
+      "Hospital delivery discharge summary",
+      "Mother's Aadhaar card",
+      "Ration card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Health and Family Welfare Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "annan-s-seer-wedding-gift-scheme-10",
+    "name": "Annan's Seer Wedding Gift Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Women",
+    "description": "8-gram gold coin and silk saree as wedding gift",
+    "benefits": [
+      "8-gram gold coin and silk saree as wedding gift"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 100000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Eligible bride getting married in Tamil Nadu"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Marriage invitation",
+      "Income certificate"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "singappenngal-valimaippaduthum-thittam-11",
+    "name": "Singappenngal Valimaippaduthum Thittam",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "MSME / Social Welfare Department",
+    "category": "MSME & Women Empowerment",
+    "description": "Rs.5 lakh subsidy support for women SHG enterprises",
+    "benefits": [
+      "Rs.5 lakh subsidy support for women SHG enterprises"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 60
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [
+        "shg_member",
+        "small_business_owner",
+        "entrepreneur"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Registered Women Self-Help Group (SHG) engaging in micro-enterprise"
+      ]
+    },
+    "requiredDocuments": [
+      "SHG registration certificate",
+      "Members' Aadhaar cards",
+      "Project proposal report",
+      "SHG bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "MSME / Social Welfare Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "vetri-magalir-goat-rearing-scheme-12",
+    "name": "Vetri Magalir Goat Rearing Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Animal Husbandry Department",
+    "category": "Agriculture & Animal Husbandry",
+    "description": "Support and livestock units for goat rearing as livelihood for rural women",
+    "benefits": [
+      "Support and livestock units for goat rearing as livelihood for rural women"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 60
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [
+        "farmer",
+        "daily_wage_worker"
+      ],
+      "student": null,
+      "annualIncomeMax": 100000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Priority to widows, deserted women, and SC/ST women in rural areas"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Ration card",
+      "Bank passbook",
+      "Community certificate"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Animal Husbandry Department",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "working-women-s-hostel-scheme-thozhi-hostels-13",
+    "name": "Working Women's Hostel Scheme (Thozhi Hostels)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Housing",
+    "description": "Subsidised, secure hostel accommodation for working women in district headquarters and industrial hubs",
+    "benefits": [
+      "Subsidised, secure hostel accommodation for working women in district headquarters and industrial hubs"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [
+        "employed",
+        "any"
+      ],
+      "student": null,
+      "annualIncomeMax": 500000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Employed in organized/unorganized sector away from hometown"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Employment certificate / ID card from employer",
+      "Salary slip / Income proof"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "women-entrepreneur-loan-scheme-tiic-msme-14",
+    "name": "Women Entrepreneur Loan Scheme (TIIC / MSME)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "MSME Department",
+    "category": "MSME & Entrepreneurship",
+    "description": "Subsidised and collateral-relaxed loans with capital subsidy for women starting enterprises",
+    "benefits": [
+      "Subsidised and collateral-relaxed loans with capital subsidy for women starting enterprises"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 55
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [
+        "entrepreneur",
+        "small_business_owner"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Enterprise must have at least 51% female equity ownership"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar Card & PAN Card",
+      "Udyam Registration Certificate",
+      "Detailed Project Report (DPR)",
+      "Bank statement for past 6 months"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.msmeonline.tn.gov.in/"
+    },
+    "source": {
+      "name": "MSME Department",
+      "url": "https://www.msmeonline.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "mahalir-thittam-tncdw-shg-micro-credit-15",
+    "name": "Mahalir Thittam (TNCDW SHG Micro-Credit)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Women & Social Welfare",
+    "description": "Self-help group formation, revolving fund, micro-credit linkage and livelihood support for women",
+    "benefits": [
+      "Self-help group formation, revolving fund, micro-credit linkage and livelihood support for women"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 60
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [
+        "shg_member",
+        "any"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Member of recognized Women Self Help Group"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "SHG membership passbook",
+      "Bank account details"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "nutritious-meal-programme-for-pregnant-lactating-women-16",
+    "name": "Nutritious Meal Programme for Pregnant/Lactating Women",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Healthcare & Nutrition",
+    "description": "Free hot cooked nutritious meals, iron folic supplements, and health check-ups at Anganwadi centers",
+    "benefits": [
+      "Free hot cooked nutritious meals, iron folic supplements, and health check-ups at Anganwadi centers"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 45
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Enrolled in local Anganwadi / ICDS center"
+      ]
+    },
+    "requiredDocuments": [
+      "Mother and Child Tracking System (MCTS/RCH) ID",
+      "Aadhaar card",
+      "Anganwadi registration slip"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "ennum-ezhuthum-mission-17",
+    "name": "Ennum Ezhuthum Mission",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education",
+    "description": "Foundational literacy and numeracy learning materials, kits, and remedial teaching for Classes 1-3 in Government schools",
+    "benefits": [
+      "Foundational literacy and numeracy learning materials, kits, and remedial teaching for Classes 1-3 in Government schools"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 5,
+        "max": 9
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Enrolled in Government or Government-aided primary school"
+      ]
+    },
+    "requiredDocuments": [
+      "School admission record / EMIS ID",
+      "Aadhaar card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "vetri-laptop-scheme-for-college-students-18",
+    "name": "Vetri Laptop Scheme for College Students",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Higher Education Department",
+    "category": "Education",
+    "description": "Free pre-loaded laptops for eligible college students; Rs.2,000 crore state allocation",
+    "benefits": [
+      "Free pre-loaded laptops for eligible college students; Rs.2,000 crore state allocation"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 17,
+        "max": 25
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Enrolled in Government or Government-aided arts, science, engineering, or polytechnic colleges"
+      ]
+    },
+    "requiredDocuments": [
+      "College Student ID card",
+      "Aadhaar card",
+      "Admission fee receipt",
+      "EMIS student number"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "Higher Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "puthiya-payanam-puthiya-vegam-class-xi-bicycle-scheme-19",
+    "name": "Puthiya Payanam Puthiya Vegam (Class XI Bicycle Scheme)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education",
+    "description": "Free bicycle with helmet and water bottle for ~5.32 lakh Class XI students",
+    "benefits": [
+      "Free bicycle with helmet and water bottle for ~5.32 lakh Class XI students"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 15,
+        "max": 18
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Studying in Class XI in Government or Government-aided higher secondary schools"
+      ]
+    },
+    "requiredDocuments": [
+      "School identity card",
+      "Aadhaar card",
+      "EMIS student ID"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "perunthalaivar-kamarajar-breakfast-scheme-extended-20",
+    "name": "Perunthalaivar Kamarajar Breakfast Scheme (Extended)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education & Nutrition",
+    "description": "Free hot nutritious breakfast on all school working days, extended to Classes VI-VIII",
+    "benefits": [
+      "Free hot nutritious breakfast on all school working days, extended to Classes VI-VIII"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 5,
+        "max": 14
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Enrolled in Government primary and middle schools"
+      ]
+    },
+    "requiredDocuments": [
+      "School enrollment record / EMIS ID"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "perunthalaivar-kamarajar-schools-of-excellence-21",
+    "name": "Perunthalaivar Kamarajar Schools of Excellence",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education",
+    "description": "World-class residential schooling of excellence with smart classrooms and career mentoring for Classes IX-XII",
+    "benefits": [
+      "World-class residential schooling of excellence with smart classrooms and career mentoring for Classes IX-XII"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 13,
+        "max": 18
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Selection through state merit screening test"
+      ]
+    },
+    "requiredDocuments": [
+      "Previous class academic marksheet",
+      "Aadhaar card",
+      "EMIS number"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "palli-niraivu-thittam-22",
+    "name": "Palli Niraivu Thittam",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education",
+    "description": "Infrastructure and enrolment improvement programme for 3,734 schools (~Rs.2,132 crore)",
+    "benefits": [
+      "Infrastructure and enrolment improvement programme for 3,734 schools (~Rs.2,132 crore)"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 5,
+        "max": 18
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "School infrastructure and learning enhancement support"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "School enrollment ID"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "super-clean-super-campus-scheme-23",
+    "name": "Super Clean Super Campus Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education",
+    "description": "Campus cleanliness, sanitation and infrastructure upgrade programme for ~10,000 schools (Rs.139 crore)",
+    "benefits": [
+      "Campus cleanliness, sanitation and infrastructure upgrade programme for ~10,000 schools (Rs.139 crore)"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 5,
+        "max": 18
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Students enrolled in state government schools"
+      ]
+    },
+    "requiredDocuments": [
+      "School enrollment ID"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "tn-sudar-integrated-student-hostels-24",
+    "name": "TN-SUDAR Integrated Student Hostels",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education / Higher Education Department",
+    "category": "Education & Hostels",
+    "description": "Integrated modern hostel facilities (~1 lakh beds) for rural students pursuing higher studies",
+    "benefits": [
+      "Integrated modern hostel facilities (~1 lakh beds) for rural students pursuing higher studies"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 15,
+        "max": 25
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": 250000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Enrolled students requiring residential accommodation"
+      ]
+    },
+    "requiredDocuments": [
+      "Student ID card",
+      "Aadhaar card",
+      "Income certificate",
+      "Admission proof"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education / Higher Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "naan-mudhalvan-skill-employability-scheme-25",
+    "name": "Naan Mudhalvan Skill & Employability Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Higher Education Department / TNSDC",
+    "category": "Education & Skills",
+    "description": "Free industry-oriented tech skilling, AI/cloud certifications, internships, and campus placement support",
+    "benefits": [
+      "Free industry-oriented tech skilling, AI/cloud certifications, internships, and campus placement support"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 17,
+        "max": 28
+      },
+      "gender": [],
+      "occupation": [
+        "student",
+        "unemployed"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Enrolled in higher education institution or graduated youth seeking employment"
+      ]
+    },
+    "requiredDocuments": [
+      "College ID card / Degree certificate",
+      "Aadhaar card",
+      "Active email and mobile number"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.naanmudhalvan.tn.gov.in/"
+    },
+    "source": {
+      "name": "Higher Education Department / TNSDC",
+      "url": "https://www.naanmudhalvan.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "vetri-skill-training-scheme-26",
+    "name": "Vetri Skill Training Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Skill Development Department",
+    "category": "Education & Skills",
+    "description": "Industry-aligned skilling for 12 lakh college students and 1 lakh unemployed youth; internships for 20,000 youth (Rs.150 crore)",
+    "benefits": [
+      "Industry-aligned skilling for 12 lakh college students and 1 lakh unemployed youth; internships for 20,000 youth (Rs.150 crore)"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 30
+      },
+      "gender": [],
+      "occupation": [
+        "student",
+        "unemployed"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "College students and job-seeking youth in Tamil Nadu"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Educational qualification certificate"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.naanmudhalvan.tn.gov.in/"
+    },
+    "source": {
+      "name": "Skill Development Department",
+      "url": "https://www.naanmudhalvan.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "vetri-nichayam-scheme-27",
+    "name": "Vetri Nichayam Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Skill Development Department",
+    "category": "Education & Skills",
+    "description": "Free industry-ready skill training and career placement for students and job seekers",
+    "benefits": [
+      "Free industry-ready skill training and career placement for students and job seekers"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 35
+      },
+      "gender": [],
+      "occupation": [
+        "unemployed",
+        "student",
+        "any"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Unemployed youth and job seekers"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Educational certificate"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "Skill Development Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "free-uniform-distribution-scheme-28",
+    "name": "Free Uniform Distribution Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education",
+    "description": "Free 4 sets of school uniforms, shoes, and socks for Government school students",
+    "benefits": [
+      "Free 4 sets of school uniforms, shoes, and socks for Government school students"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 5,
+        "max": 15
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Students enrolled in Government and Aided schools from Classes 1 to 8"
+      ]
+    },
+    "requiredDocuments": [
+      "School admission register / EMIS ID"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "free-textbook-scheme-29",
+    "name": "Free Textbook Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education",
+    "description": "Free textbooks and notebooks for Government school students",
+    "benefits": [
+      "Free textbooks and notebooks for Government school students"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 5,
+        "max": 18
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Students from Classes 1 to 12 in Government and Aided schools"
+      ]
+    },
+    "requiredDocuments": [
+      "School admission register / EMIS ID"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "illam-thedi-kalvi-30",
+    "name": "Illam Thedi Kalvi",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education",
+    "description": "Doorstep community supplementary education support for primary and middle school children",
+    "benefits": [
+      "Doorstep community supplementary education support for primary and middle school children"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 5,
+        "max": 14
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Children studying in Classes 1 to 8"
+      ]
+    },
+    "requiredDocuments": [
+      "EMIS number / Aadhaar card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "pudhumai-penn-scheme-higher-education-assistance-31",
+    "name": "Pudhumai Penn Scheme (Higher Education Assistance)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Education & Women",
+    "description": "Rs.1,000 per month direct financial grant to girl students pursuing undergraduate degree, diploma, or ITI",
+    "benefits": [
+      "Rs.1,000 per month direct financial grant to girl students pursuing undergraduate degree, diploma, or ITI"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 17,
+        "max": 25
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Must have studied Classes 6 to 12 in Tamil Nadu Government schools"
+      ]
+    },
+    "requiredDocuments": [
+      "Government school 6th to 12th study certificate (EMIS)",
+      "College admission letter and ID",
+      "Aadhaar card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "chief-minister-s-girls-hostel-scheme-32",
+    "name": "Chief Minister's Girls Hostel Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education & Hostels",
+    "description": "Free residential hostel facilities with nutritious food for girl students in educationally backward blocks",
+    "benefits": [
+      "Free residential hostel facilities with nutritious food for girl students in educationally backward blocks"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 11,
+        "max": 18
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": 200000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Girl students studying in Classes 6 to 12"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "School study certificate",
+      "Income certificate"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "drug-free-tamil-nadu-school-initiative-33",
+    "name": "Drug-Free Tamil Nadu School Initiative",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education",
+    "description": "Anti-Drug Clubs, student volunteer groups, 10581 helpline and mobile app for school student safety",
+    "benefits": [
+      "Anti-Drug Clubs, student volunteer groups, 10581 helpline and mobile app for school student safety"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 12,
+        "max": 18
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Enrolled school students"
+      ]
+    },
+    "requiredDocuments": [
+      "School ID card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "public-library-digital-redesign-digital-hubs-34",
+    "name": "Public Library Digital Redesign & Digital Hubs",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Tamil Development and Information Department",
+    "category": "Education & Culture",
+    "description": "Digital learning hubs with free high-speed Wi-Fi, e-books, and competitive exam preparation centers in 38 district central libraries",
+    "benefits": [
+      "Digital learning hubs with free high-speed Wi-Fi, e-books, and competitive exam preparation centers in 38 district central libraries"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 15,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "student",
+        "unemployed",
+        "any"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Public library members and aspirants preparing for competitive examinations"
+      ]
+    },
+    "requiredDocuments": [
+      "Library membership card / Aadhaar card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "Tamil Development and Information Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "naan-mudhalvan-global-internship-programme-35",
+    "name": "Naan Mudhalvan Global Internship Programme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Higher Education Department",
+    "category": "Education & Skills",
+    "description": "Fully sponsored international training, foreign exchange, and internship opportunities for meritorious college students",
+    "benefits": [
+      "Fully sponsored international training, foreign exchange, and internship opportunities for meritorious college students"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 25
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Meritorious college students selected through state evaluation"
+      ]
+    },
+    "requiredDocuments": [
+      "College ID card",
+      "Academic transcripts",
+      "Passport / Aadhaar card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.naanmudhalvan.tn.gov.in/"
+    },
+    "source": {
+      "name": "Higher Education Department",
+      "url": "https://www.naanmudhalvan.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "adi-dravidar-tribal-welfare-education-scholarships-36",
+    "name": "Adi Dravidar & Tribal Welfare Education Scholarships",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Adi Dravidar and Tribal Welfare Department",
+    "category": "Education & Social Justice",
+    "description": "Post-matric and pre-matric scholarships covering 100% tuition fees, hostel allowance, and book grants for SC/ST students",
+    "benefits": [
+      "Post-matric and pre-matric scholarships covering 100% tuition fees, hostel allowance, and book grants for SC/ST students"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 14,
+        "max": 30
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": 250000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Students belonging to SC / ST / SCC communities"
+      ]
+    },
+    "requiredDocuments": [
+      "Caste / Community certificate (SC/ST)",
+      "Income certificate",
+      "Academic marksheet",
+      "Aadhaar linked bank account"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://scholarships.gov.in/"
+    },
+    "source": {
+      "name": "Adi Dravidar and Tribal Welfare Department",
+      "url": "https://scholarships.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "chief-minister-s-comprehensive-health-insurance-scheme-cmchis-37",
+    "name": "Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Health and Family Welfare Department",
+    "category": "Healthcare",
+    "description": "Cashless medical and surgical treatment up to Rs.5,00,000 per family per year at empaneled hospitals",
+    "benefits": [
+      "Cashless medical and surgical treatment up to Rs.5,00,000 per family per year at empaneled hospitals"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 120000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Family must hold a valid Smart Ration Card in Tamil Nadu"
+      ]
+    },
+    "requiredDocuments": [
+      "Smart Ration Card (Family Card)",
+      "Aadhaar card of family members",
+      "Income certificate from VAO"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.cmchistn.com/"
+    },
+    "source": {
+      "name": "Health and Family Welfare Department",
+      "url": "https://www.cmchistn.com/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "amma-mini-clinics-38",
+    "name": "Amma Mini Clinics",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Health and Family Welfare Department",
+    "category": "Healthcare",
+    "description": "Free primary healthcare consultation, basic diagnostic tests, and essential medicines in urban settlements and villages",
+    "benefits": [
+      "Free primary healthcare consultation, basic diagnostic tests, and essential medicines in urban settlements and villages"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Open to all residents near clinic location"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card / Patient OP registration"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Health and Family Welfare Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "makkalai-thedi-maruthuvam-healthcare-at-doorstep-39",
+    "name": "Makkalai Thedi Maruthuvam (Healthcare at Doorstep)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Health and Family Welfare Department",
+    "category": "Healthcare",
+    "description": "Doorstep screening, delivery of hypertension/diabetes medicines, palliative care, and dialysis support",
+    "benefits": [
+      "Doorstep screening, delivery of hypertension/diabetes medicines, palliative care, and dialysis support"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 45,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Non-communicable disease patients, elderly, or bedridden individuals"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Previous medical prescription / records"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.cmchistn.com/"
+    },
+    "source": {
+      "name": "Health and Family Welfare Department",
+      "url": "https://www.cmchistn.com/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "dr-muthulakshmi-reddy-maternity-benefit-scheme-40",
+    "name": "Dr. Muthulakshmi Reddy Maternity Benefit Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Health and Family Welfare Department",
+    "category": "Healthcare & Maternity",
+    "description": "Financial assistance of Rs.18,000 (including Rs.14,000 cash and Rs.4,000 Amma Nutrition Kit) across 5 installments",
+    "benefits": [
+      "Financial assistance of Rs.18,000 (including Rs.14,000 cash and Rs.4,000 Amma Nutrition Kit) across 5 installments"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 19,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 100000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Restricted to first two deliveries; delivery must take place in Government hospital"
+      ]
+    },
+    "requiredDocuments": [
+      "Mother and Child Tracking System (PICME) number",
+      "Aadhaar card",
+      "Bank passbook copy",
+      "Ration card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Health and Family Welfare Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "108-ambulance-emergency-response-service-41",
+    "name": "108 Ambulance / Emergency Response Service",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Health and Family Welfare Department",
+    "category": "Healthcare & Emergency",
+    "description": "24x7 free emergency ambulance response, neonatal emergency transport, and critical trauma care statewide",
+    "benefits": [
+      "24x7 free emergency ambulance response, neonatal emergency transport, and critical trauma care statewide"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Medical emergency, trauma, accident, or maternity transport"
+      ]
+    },
+    "requiredDocuments": [
+      "Toll-Free Call: 108 (No documents required for emergency response)"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Health and Family Welfare Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "amma-baby-care-kit-scheme-42",
+    "name": "Amma Baby Care Kit Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Health and Family Welfare Department",
+    "category": "Healthcare & Maternity",
+    "description": "Free kit containing 16 essential baby care items (infant towel, dress, mattress, mosquito net, soap, oil, nail clipper) for newborns",
+    "benefits": [
+      "Free kit containing 16 essential baby care items (infant towel, dress, mattress, mosquito net, soap, oil, nail clipper) for newborns"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 0,
+        "max": 1
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Delivered in Tamil Nadu Government hospitals"
+      ]
+    },
+    "requiredDocuments": [
+      "Hospital discharge summary",
+      "Mother's Aadhaar card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Health and Family Welfare Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "free-diagnostics-scheme-43",
+    "name": "Free Diagnostics Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Health and Family Welfare Department",
+    "category": "Healthcare",
+    "description": "Free laboratory tests, blood investigations, X-rays, CT scans, and MRI scans in Government medical institutions",
+    "benefits": [
+      "Free laboratory tests, blood investigations, X-rays, CT scans, and MRI scans in Government medical institutions"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Patients treated in Government hospitals / PHCs"
+      ]
+    },
+    "requiredDocuments": [
+      "Doctor referral slip / OP ticket"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Health and Family Welfare Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "nutritious-meal-scheme-midday-meal-44",
+    "name": "Nutritious Meal Scheme (Midday Meal)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Nutrition & Education",
+    "description": "Free hot cooked nutritious midday meal with boiled eggs / bananas for all school children",
+    "benefits": [
+      "Free hot cooked nutritious midday meal with boiled eggs / bananas for all school children"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 5,
+        "max": 15
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Students enrolled in Government and aided primary and middle schools"
+      ]
+    },
+    "requiredDocuments": [
+      "School attendance register"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "annapoorani-super-six-lpg-cylinder-scheme-45",
+    "name": "Annapoorani Super Six LPG Cylinder Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Food, Consumer Protection and Civil Supplies Department",
+    "category": "Food Security & Energy",
+    "description": "Reimbursement / subsidy for up to 6 domestic LPG cylinders per year (Rs.4,000 crore/year)",
+    "benefits": [
+      "Reimbursement / subsidy for up to 6 domestic LPG cylinders per year (Rs.4,000 crore/year)"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 250000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Active domestic LPG connection in consumer name; priority to marginal farmers and PwD families"
+      ]
+    },
+    "requiredDocuments": [
+      "Smart Ration Card",
+      "Aadhaar Card",
+      "LPG Consumer Book / SV Document",
+      "Income certificate"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tnpds.gov.in/"
+    },
+    "source": {
+      "name": "Food, Consumer Protection and Civil Supplies Department",
+      "url": "https://www.tnpds.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "farmers-interest-group-fig-scheme-46",
+    "name": "Farmers Interest Group (FIG) Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Department",
+    "category": "Agriculture",
+    "description": "Financial grants, training, and office infrastructure support for groups of 15 farmers to adopt collective farming and direct marketing",
+    "benefits": [
+      "Financial grants, training, and office infrastructure support for groups of 15 farmers to adopt collective farming and direct marketing"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Registered group of 15-20 small/marginal farmers in a contiguous village cluster"
+      ]
+    },
+    "requiredDocuments": [
+      "Group registration resolution",
+      "Members' Aadhaar cards & Patta copies",
+      "Group bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Department",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "weather-based-crop-insurance-scheme-47",
+    "name": "Weather-Based Crop Insurance Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Department",
+    "category": "Agriculture",
+    "description": "Subsidized crop insurance cover with direct claim payouts linked to automatic weather station rainfall deficit and temperature fluctuations",
+    "benefits": [
+      "Subsidized crop insurance cover with direct claim payouts linked to automatic weather station rainfall deficit and temperature fluctuations"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Cultivating notified crops in notified insurance revenue villages"
+      ]
+    },
+    "requiredDocuments": [
+      "Patta / Chitta document",
+      "Adangal certificate from VAO",
+      "Aadhaar card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmfby.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Department",
+      "url": "https://pmfby.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "power-tariff-subsidy-for-farmers-free-farm-electricity-48",
+    "name": "Power Tariff Subsidy for Farmers (Free Farm Electricity)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Department / TANGEDCO",
+    "category": "Agriculture",
+    "description": "100% free electricity supply for agricultural borewells and pump sets",
+    "benefits": [
+      "100% free electricity supply for agricultural borewells and pump sets"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Agricultural electricity service connection in farmer's name"
+      ]
+    },
+    "requiredDocuments": [
+      "Patta / Land ownership document",
+      "TANGEDCO service connection receipt",
+      "Aadhaar Card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Department / TANGEDCO",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "paddy-seed-subsidy-scheme-49",
+    "name": "Paddy Seed Subsidy Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Department",
+    "category": "Agriculture",
+    "description": "50% to 75% subsidy on certified high-yielding paddy seed varieties distributed through Agricultural Extension Centers (Rs.34.72 crore allocated)",
+    "benefits": [
+      "50% to 75% subsidy on certified high-yielding paddy seed varieties distributed through Agricultural Extension Centers (Rs.34.72 crore allocated)"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Farmers cultivating paddy in Tamil Nadu"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Patta copy / Kisan Credit Card",
+      "AEC voucher"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Department",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "cotton-renaissance-mission-50",
+    "name": "Cotton Renaissance Mission",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Department",
+    "category": "Agriculture",
+    "description": "Financial subsidies, seed kits, pheromone traps, and bio-inputs for boosting cotton cultivation (Rs.27.21 crore)",
+    "benefits": [
+      "Financial subsidies, seed kits, pheromone traps, and bio-inputs for boosting cotton cultivation (Rs.27.21 crore)"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Farmers growing cotton in designated districts"
+      ]
+    },
+    "requiredDocuments": [
+      "Patta document",
+      "Aadhaar card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Department",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "drop-by-drop-water-scheme-micro-irrigation-scheme-51",
+    "name": "Drop by Drop Water Scheme (Micro Irrigation Scheme)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Department",
+    "category": "Agriculture",
+    "description": "100% subsidy for small and marginal farmers, and 75% subsidy for other farmers for installing drip/sprinkler irrigation systems",
+    "benefits": [
+      "100% subsidy for small and marginal farmers, and 75% subsidy for other farmers for installing drip/sprinkler irrigation systems"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer",
+        "small_farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Must possess agricultural land with assured irrigation water source"
+      ]
+    },
+    "requiredDocuments": [
+      "Land ownership documents (Patta / Chitta)",
+      "Adangal / FMB sketch",
+      "Aadhaar Card",
+      "Small / Marginal Farmer Certificate"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Department",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "annal-ambedkar-agricultural-assistance-scheme-52",
+    "name": "Annal Ambedkar Agricultural Assistance Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Adi Dravidar and Tribal Welfare Department",
+    "category": "Agriculture & Social Justice",
+    "description": "Direct financial grant and 100% subsidy for shallow tube wells, submersible pump sets, and micro-irrigation for SC/ST farmers",
+    "benefits": [
+      "Direct financial grant and 100% subsidy for shallow tube wells, submersible pump sets, and micro-irrigation for SC/ST farmers"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": 200000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "SC / ST small and marginal farmers"
+      ]
+    },
+    "requiredDocuments": [
+      "Community Certificate (SC/ST)",
+      "Patta / Land documents",
+      "Aadhaar card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Adi Dravidar and Tribal Welfare Department",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "distribution-of-biofertilisers-micro-nutrients-53",
+    "name": "Distribution of Biofertilisers & Micro-Nutrients",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Department",
+    "category": "Agriculture",
+    "description": "Free / 50% subsidized supply of Azospirillum, Phosphobacteria, Rhizobium, and liquid bio-fertilizers to enhance soil health",
+    "benefits": [
+      "Free / 50% subsidized supply of Azospirillum, Phosphobacteria, Rhizobium, and liquid bio-fertilizers to enhance soil health"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "All registered farmers in Tamil Nadu"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Agricultural Extension Center registration"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Department",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "distribution-of-agricultural-implements-power-tillers-54",
+    "name": "Distribution of Agricultural Implements & Power Tillers",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Department",
+    "category": "Agriculture",
+    "description": "Up to 50% capital subsidy on tractors, power tillers, rotavators, paddy transplanters, and harvesting machinery",
+    "benefits": [
+      "Up to 50% capital subsidy on tractors, power tillers, rotavators, paddy transplanters, and harvesting machinery"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Farmers with cultivable land holdings (priority to small/marginal and SC/ST farmers)"
+      ]
+    },
+    "requiredDocuments": [
+      "Patta / Land ownership documents",
+      "Aadhaar card",
+      "Bank sanction letter / quotation"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Department",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "generator-subsidy-for-farmers-55",
+    "name": "Generator Subsidy for Farmers",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Department",
+    "category": "Agriculture",
+    "description": "50% capital subsidy on purchase of diesel generator sets up to 10 KVA for farm irrigation",
+    "benefits": [
+      "50% capital subsidy on purchase of diesel generator sets up to 10 KVA for farm irrigation"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Farmers with energised agricultural pump set connection"
+      ]
+    },
+    "requiredDocuments": [
+      "Electricity service connection document",
+      "Patta copy",
+      "Aadhaar card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Department",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "integrated-pest-management-demonstration-cum-training-56",
+    "name": "Integrated Pest Management Demonstration Cum Training",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Department",
+    "category": "Agriculture",
+    "description": "Free hands-on field school training, bio-pesticide kits, and financial assistance of Rs.10,000 for clusters of 30 farmers",
+    "benefits": [
+      "Free hands-on field school training, bio-pesticide kits, and financial assistance of Rs.10,000 for clusters of 30 farmers"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Farmers participating in Farmer Field Schools (FFS)"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Village cluster enrollment"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tnpds.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Department",
+      "url": "https://www.tnpds.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "kaalnadaigal-kaappom-livestock-insurance-scheme-57",
+    "name": "Kaalnadaigal Kaappom (Livestock Insurance Scheme)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Animal Husbandry Department",
+    "category": "Agriculture & Animal Husbandry",
+    "description": "70% premium subsidy on insurance cover for milch cows, bullocks, sheep, and goats against disease and natural calamities",
+    "benefits": [
+      "70% premium subsidy on insurance cover for milch cows, bullocks, sheep, and goats against disease and natural calamities"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer",
+        "daily_wage_worker"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Owners of cattle, sheep, and goat livestock units"
+      ]
+    },
+    "requiredDocuments": [
+      "Ear tag ID number",
+      "Veterinary health certificate",
+      "Aadhaar card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmfby.gov.in/"
+    },
+    "source": {
+      "name": "Animal Husbandry Department",
+      "url": "https://pmfby.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "tn-vetri-village-infrastructure-mission-58",
+    "name": "TN-VETRI Village Infrastructure Mission",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Rural Development and Panchayat Raj Department",
+    "category": "Rural Development & Infrastructure",
+    "description": "Comprehensive rural community upgrade mission (~Rs.6,000 crore/year) for concrete roads, clean drinking water, and solar streetlights",
+    "benefits": [
+      "Comprehensive rural community upgrade mission (~Rs.6,000 crore/year) for concrete roads, clean drinking water, and solar streetlights"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Rural gram panchayat residents"
+      ]
+    },
+    "requiredDocuments": [
+      "Resident of Gram Panchayat"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Rural Development and Panchayat Raj Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "uzhavar-sandhai-farmers-direct-markets-59",
+    "name": "Uzhavar Sandhai (Farmers' Direct Markets)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Agriculture Marketing Department",
+    "category": "Agriculture",
+    "description": "Free designated stall space, electronic weighing scales, and direct consumer sale access with zero middleman commissions",
+    "benefits": [
+      "Free designated stall space, electronic weighing scales, and direct consumer sale access with zero middleman commissions"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Genuine vegetable and fruit cultivating farmers"
+      ]
+    },
+    "requiredDocuments": [
+      "Uzhavar Sandhai Farmer Identity Card issued by ADA (Agri Marketing)",
+      "Patta copy",
+      "Aadhaar card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Agriculture Marketing Department",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "vetri-veedu-thittam-60",
+    "name": "Vetri Veedu Thittam",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Housing and Urban Development Department",
+    "category": "Housing",
+    "description": "Subsidized permanent concrete housing construction assistance for economically weaker sections in urban and peri-urban areas",
+    "benefits": [
+      "Subsidized permanent concrete housing construction assistance for economically weaker sections in urban and peri-urban areas"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 300000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Families not owning any other pucca house in India"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Income certificate",
+      "Land ownership / patta document",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmaymis.gov.in/"
+    },
+    "source": {
+      "name": "Housing and Urban Development Department",
+      "url": "https://pmaymis.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "my-home-urban-housing-mission-61",
+    "name": "MY-HOME Urban Housing Mission",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Housing and Urban Development Department",
+    "category": "Housing",
+    "description": "Development of 1 lakh affordable urban housing apartments with subsidized interest subvention and basic civic infrastructure",
+    "benefits": [
+      "Development of 1 lakh affordable urban housing apartments with subsidized interest subvention and basic civic infrastructure"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 300000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Urban homeless families or slum residents"
+      ]
+    },
+    "requiredDocuments": [
+      "Smart Ration Card",
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmaymis.gov.in/"
+    },
+    "source": {
+      "name": "Housing and Urban Development Department",
+      "url": "https://pmaymis.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "rooftop-solar-subsidy-scheme-62",
+    "name": "Rooftop Solar Subsidy Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Energy Department / TEDA",
+    "category": "Energy & Environment",
+    "description": "Direct capital subsidy up to Rs.1,00,000 for domestic grid-connected rooftop solar photovoltaic power plants",
+    "benefits": [
+      "Direct capital subsidy up to Rs.1,00,000 for domestic grid-connected rooftop solar photovoltaic power plants"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Domestic electricity consumers with shadow-free roof area"
+      ]
+    },
+    "requiredDocuments": [
+      "TANGEDCO electricity consumer service number",
+      "Property tax receipt",
+      "Aadhaar card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmsuryaghar.gov.in/"
+    },
+    "source": {
+      "name": "Energy Department / TEDA",
+      "url": "https://pmsuryaghar.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "chief-minister-s-integrated-urban-development-mission-cmiuda-63",
+    "name": "Chief Minister's Integrated Urban Development Mission (CMIUDA)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Municipal Administration and Water Supply Department",
+    "category": "Urban Development",
+    "description": "Civic infrastructure improvement in municipalities and municipal corporations (Rs.2,117 crore for water supply, storm water drains, underground sewerage)",
+    "benefits": [
+      "Civic infrastructure improvement in municipalities and municipal corporations (Rs.2,117 crore for water supply, storm water drains, underground sewerage)"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Residents of urban local bodies in Tamil Nadu"
+      ]
+    },
+    "requiredDocuments": [
+      "Urban residential proof"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Municipal Administration and Water Supply Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "green-tamil-nadu-mission-64",
+    "name": "Green Tamil Nadu Mission",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Environment, Climate Change and Forests Department",
+    "category": "Environment & Forests",
+    "description": "Free distribution of native tree saplings, agroforestry incentives, and community plantation drives to increase green cover to 33%",
+    "benefits": [
+      "Free distribution of native tree saplings, agroforestry incentives, and community plantation drives to increase green cover to 33%"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Farmers, educational institutions, industries, and citizen volunteers"
+      ]
+    },
+    "requiredDocuments": [
+      "Online sapling request via mobile app / portal"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Environment, Climate Change and Forests Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "tn-shore-coastal-mangrove-restoration-mission-65",
+    "name": "TN-SHORE Coastal Mangrove Restoration Mission",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Environment, Climate Change and Forests Department",
+    "category": "Environment & Livelihood",
+    "description": "Livelihood grant support and eco-restoration incentives for coastal fishing and mangrove community self-help groups",
+    "benefits": [
+      "Livelihood grant support and eco-restoration incentives for coastal fishing and mangrove community self-help groups"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "fisherman",
+        "daily_wage_worker",
+        "any"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Coastal community residents participating in mangrove restoration"
+      ]
+    },
+    "requiredDocuments": [
+      "Fisherman ID card / Aadhaar card",
+      "Community group bank account"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tnpds.gov.in/"
+    },
+    "source": {
+      "name": "Environment, Climate Change and Forests Department",
+      "url": "https://www.tnpds.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "amrut-smart-cities-mission-tamil-nadu-component-66",
+    "name": "AMRUT Smart Cities Mission (Tamil Nadu Component)",
+    "level": "Central/State",
+    "state": "India",
+    "department": "Municipal Administration and Water Supply Department",
+    "category": "Urban Infrastructure",
+    "description": "24x7 pressurized tap water connections, green parks, smart mobility, and non-motorized transport in 33+ designated cities",
+    "benefits": [
+      "24x7 pressurized tap water connections, green parks, smart mobility, and non-motorized transport in 33+ designated cities"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Residents of designated AMRUT cities/towns"
+      ]
+    },
+    "requiredDocuments": [
+      "Urban residence proof"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Municipal Administration and Water Supply Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "old-age-pension-scheme-ignoaps-state-oap-67",
+    "name": "Old Age Pension Scheme (IGNOAPS / State OAP)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Pension",
+    "description": "Monthly pension of Rs.1,000 to Rs.1,200 transferred directly to bank account",
+    "benefits": [
+      "Monthly pension of Rs.1,000 to Rs.1,200 transferred directly to bank account"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 60,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "retired",
+        "unemployed",
+        "daily_wage_worker"
+      ],
+      "student": null,
+      "annualIncomeMax": 100000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Living in destitute conditions without adult earning support"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Age proof document (Voter ID / Birth Certificate)",
+      "Income & Destitute certificate from Tahsildar",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "destitute-widow-pension-scheme-68",
+    "name": "Destitute Widow Pension Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Pension",
+    "description": "Monthly pension of Rs.1,000 directly transferred to eligible widows",
+    "benefits": [
+      "Monthly pension of Rs.1,000 directly transferred to eligible widows"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 100000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Applicant must be an unremarried widow without independent source of sustenance"
+      ]
+    },
+    "requiredDocuments": [
+      "Husband's Death Certificate",
+      "Destitute Widow Certificate from RDO",
+      "Aadhaar card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "differently-abled-maintenance-pension-scheme-69",
+    "name": "Differently-Abled Maintenance Pension Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Welfare of Differently Abled Persons Department",
+    "category": "Disability Welfare",
+    "description": "Monthly pension of Rs.1,500 to Rs.2,000 for severely disabled persons",
+    "benefits": [
+      "Monthly pension of Rs.1,500 to Rs.2,000 for severely disabled persons"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Disability of 40% and above (UDID benchmark disability certificate)"
+      ]
+    },
+    "requiredDocuments": [
+      "Unique Disability ID (UDID) / Disability Certificate",
+      "Aadhaar card",
+      "Bank account details"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Welfare of Differently Abled Persons Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "destitute-deserted-wives-pension-scheme-70",
+    "name": "Destitute Deserted Wives Pension Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Pension",
+    "description": "Monthly pension of Rs.1,000 for deserted wives without financial support",
+    "benefits": [
+      "Monthly pension of Rs.1,000 for deserted wives without financial support"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 30,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 100000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Deserted by husband for not less than 5 years (certified by Tahsildar)"
+      ]
+    },
+    "requiredDocuments": [
+      "Desertion Certificate from Tahsildar",
+      "Aadhaar card",
+      "Income certificate",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "unmarried-women-above-50-pension-scheme-71",
+    "name": "Unmarried Women Above 50 Pension Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Pension",
+    "description": "Monthly pension of Rs.1,000 for poor unmarried women aged 50 and above",
+    "benefits": [
+      "Monthly pension of Rs.1,000 for poor unmarried women aged 50 and above"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 50,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 100000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Unmarried woman living in destitute condition"
+      ]
+    },
+    "requiredDocuments": [
+      "Age proof document",
+      "Unmarried and Destitute certificate from Tahsildar",
+      "Aadhaar card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "free-housing-for-the-homeless-kalaignar-kanavu-illam-72",
+    "name": "Free Housing for the Homeless (Kalaignar Kanavu Illam)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Rural Development and Panchayat Raj / Housing Department",
+    "category": "Housing",
+    "description": "Free permanent concrete house construction grant of Rs.3,50,000 for rural homeless poor living in huts",
+    "benefits": [
+      "Free permanent concrete house construction grant of Rs.3,50,000 for rural homeless poor living in huts"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 120000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Families living in thatched/kutcha huts not owning any permanent house"
+      ]
+    },
+    "requiredDocuments": [
+      "Gram Panchayat certificate of homelessness / hut survey",
+      "Aadhaar card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmaymis.gov.in/"
+    },
+    "source": {
+      "name": "Rural Development and Panchayat Raj / Housing Department",
+      "url": "https://pmaymis.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "marriage-assistance-for-government-employees-children-73",
+    "name": "Marriage Assistance for Government Employees' Children",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Treasuries and Accounts / Employer Departments",
+    "category": "Employee Welfare",
+    "description": "Special advance loan and marriage grant up to Rs.50,000 for non-gazetted government staff",
+    "benefits": [
+      "Special advance loan and marriage grant up to Rs.50,000 for non-gazetted government staff"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": 60
+      },
+      "gender": [],
+      "occupation": [
+        "government_employee"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Confirmed state government employee"
+      ]
+    },
+    "requiredDocuments": [
+      "Employee ID card & salary slip",
+      "Marriage invitation",
+      "Service book entry"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Treasuries and Accounts / Employer Departments",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "transgender-welfare-board-schemes-74",
+    "name": "Transgender Welfare Board Schemes",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Social Welfare and Women Empowerment Department",
+    "category": "Social Welfare & Inclusion",
+    "description": "Free housing patta, Rs.1,500/month pension, micro-enterprise subsidy of Rs.50,000, and free gender affirmation healthcare",
+    "benefits": [
+      "Free housing patta, Rs.1,500/month pension, micro-enterprise subsidy of Rs.50,000, and free gender affirmation healthcare"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [
+        "transgender"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Registered with Tamil Nadu Transgender Welfare Board (TG ID Card)"
+      ]
+    },
+    "requiredDocuments": [
+      "Transgender Welfare Board ID Card",
+      "Aadhaar Card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Social Welfare and Women Empowerment Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "mudhalvarin-kakkum-karangal-ex-servicemen-welfare-75",
+    "name": "Mudhalvarin Kakkum Karangal (Ex-Servicemen Welfare)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Rehabilitation and Welfare of Ex-Servicemen Department",
+    "category": "Ex-Servicemen & MSME",
+    "description": "Capital subsidy of 30% (up to Rs.10 Lakh) with 3% interest subvention for enterprise start-ups by ex-servicemen and war widows",
+    "benefits": [
+      "Capital subsidy of 30% (up to Rs.10 Lakh) with 3% interest subvention for enterprise start-ups by ex-servicemen and war widows"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": 65
+      },
+      "gender": [],
+      "occupation": [
+        "ex_serviceman",
+        "entrepreneur"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Discharged ex-servicemen, war widows, and dependent offspring"
+      ]
+    },
+    "requiredDocuments": [
+      "Ex-Serviceman Discharge Certificate / Identity Card",
+      "Detailed Project Report (DPR)",
+      "Aadhaar Card",
+      "Bank Passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Rehabilitation and Welfare of Ex-Servicemen Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "tamil-nadu-public-distribution-system-tnpds-smart-card-76",
+    "name": "Tamil Nadu Public Distribution System (TNPDS) Smart Card",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Food, Consumer Protection and Civil Supplies Department",
+    "category": "Food Security",
+    "description": "Subsidised or free rice (up to 20kg/month), sugar, dhal, palm oil, and Pongal gift packages",
+    "benefits": [
+      "Subsidised or free rice (up to 20kg/month), sugar, dhal, palm oil, and Pongal gift packages"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Resident families in Tamil Nadu with valid gas cylinder status"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar cards of all family members",
+      "Address proof",
+      "Gas connection receipt / NOC"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tnpds.gov.in/"
+    },
+    "source": {
+      "name": "Food, Consumer Protection and Civil Supplies Department",
+      "url": "https://www.tnpds.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "tamil-nadu-skill-development-mission-tnsdc-courses-77",
+    "name": "Tamil Nadu Skill Development Mission (TNSDC Courses)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Skill Development Department",
+    "category": "Skill Development",
+    "description": "100% free NSQF-aligned vocational certification courses, stipend during training, and guaranteed job placement assistance",
+    "benefits": [
+      "100% free NSQF-aligned vocational certification courses, stipend during training, and guaranteed job placement assistance"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 35
+      },
+      "gender": [],
+      "occupation": [
+        "unemployed",
+        "student",
+        "any"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Youth seeking technical and service sector employment"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Educational marksheet (10th/12th/ITI/Diploma/Degree)"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://www.naanmudhalvan.tn.gov.in/"
+    },
+    "source": {
+      "name": "Skill Development Department",
+      "url": "https://www.naanmudhalvan.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "payroll-subsidy-for-msmes-78",
+    "name": "Payroll Subsidy for MSMEs",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "MSME Department",
+    "category": "MSME & Employment",
+    "description": "State reimbursement of Rs.2,000 to Rs.4,000 per month per new employee hired by manufacturing MSMEs for 24 months",
+    "benefits": [
+      "State reimbursement of Rs.2,000 to Rs.4,000 per month per new employee hired by manufacturing MSMEs for 24 months"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "entrepreneur",
+        "small_business_owner"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Registered manufacturing micro, small, and medium enterprises in Tamil Nadu"
+      ]
+    },
+    "requiredDocuments": [
+      "Udyam Registration certificate",
+      "EPFO / ESIC monthly challans",
+      "Bank statement"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.msmeonline.tn.gov.in/"
+    },
+    "source": {
+      "name": "MSME Department",
+      "url": "https://www.msmeonline.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "handicrafts-export-award-marketing-grant-79",
+    "name": "Handicrafts Export Award & Marketing Grant",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Handlooms, Handicrafts, Textiles and Khadi Department",
+    "category": "Handicrafts & Artisans",
+    "description": "State awards with cash prizes up to Rs.1,00,000, free exhibition booths, and 50% airfare subsidy for international handicraft expos",
+    "benefits": [
+      "State awards with cash prizes up to Rs.1,00,000, free exhibition booths, and 50% airfare subsidy for international handicraft expos"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "artisan"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Master artisans, handicraft societies, and registered handicraft exporters"
+      ]
+    },
+    "requiredDocuments": [
+      "Poompuhar Artisan Identity Card",
+      "Export registration / IEC",
+      "Aadhaar Card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Handlooms, Handicrafts, Textiles and Khadi Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "new-entrepreneur-cum-enterprise-development-scheme-needs-80",
+    "name": "New Entrepreneur-cum-Enterprise Development Scheme (NEEDS)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "MSME Department",
+    "category": "MSME & Entrepreneurship",
+    "description": "25% capital subsidy (up to Rs.75 Lakh) with 3% interest subvention for first-generation entrepreneurs",
+    "benefits": [
+      "25% capital subsidy (up to Rs.75 Lakh) with 3% interest subvention for first-generation entrepreneurs"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": 45
+      },
+      "gender": [],
+      "occupation": [
+        "entrepreneur",
+        "small_business_owner"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Degree, Diploma, or ITI qualified first-generation entrepreneur"
+      ]
+    },
+    "requiredDocuments": [
+      "Degree / Diploma / ITI certificate",
+      "Detailed Project Report (DPR)",
+      "Aadhaar Card & PAN Card",
+      "Community Certificate"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.msmeonline.tn.gov.in/"
+    },
+    "source": {
+      "name": "MSME Department",
+      "url": "https://www.msmeonline.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "unemployment-assistance-scheme-81",
+    "name": "Unemployment Assistance Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Labour Welfare and Skill Development Department",
+    "category": "Employment & Labour",
+    "description": "Monthly stipend of Rs.600 (SSLC), Rs.750 (HSC), and Rs.1,000 (Graduates) for registered job-seekers waiting for employment",
+    "benefits": [
+      "Monthly stipend of Rs.600 (SSLC), Rs.750 (HSC), and Rs.1,000 (Graduates) for registered job-seekers waiting for employment"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 40
+      },
+      "gender": [],
+      "occupation": [
+        "unemployed"
+      ],
+      "student": null,
+      "annualIncomeMax": 72000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Continuous registration in Tamil Nadu Employment Exchange for at least 5 years"
+      ]
+    },
+    "requiredDocuments": [
+      "Employment Exchange Registration Card",
+      "Educational Marksheet",
+      "Income Certificate",
+      "Aadhaar Card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Labour Welfare and Skill Development Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "chief-minister-s-solar-powered-green-house-scheme-cmspghs-82",
+    "name": "Chief Minister's Solar-Powered Green House Scheme (CMSPGHS)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Rural Development and Panchayat Raj Department",
+    "category": "Housing & Solar Energy",
+    "description": "Solar-powered 300 sq.ft pucca house with solar home lighting system constructed free of cost for BPL rural households",
+    "benefits": [
+      "Solar-powered 300 sq.ft pucca house with solar home lighting system constructed free of cost for BPL rural households"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 120000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Rural BPL households owning house-site with no permanent house"
+      ]
+    },
+    "requiredDocuments": [
+      "BPL Ration Card",
+      "Land ownership / Patta document",
+      "Aadhaar card",
+      "Bank passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmsuryaghar.gov.in/"
+    },
+    "source": {
+      "name": "Rural Development and Panchayat Raj Department",
+      "url": "https://pmsuryaghar.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "tn-unorganised-workers-welfare-board-tnuwwb-registration-83",
+    "name": "TN Unorganised Workers Welfare Board (TNUWWB) Registration",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Labour Welfare and Skill Development Department",
+    "category": "Labour Welfare",
+    "description": "Accident insurance (up to Rs.5 Lakh), natural death relief, marriage assistance, maternity benefit, and children education grants",
+    "benefits": [
+      "Accident insurance (up to Rs.5 Lakh), natural death relief, marriage assistance, maternity benefit, and children education grants"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 60
+      },
+      "gender": [],
+      "occupation": [
+        "daily_wage_worker",
+        "unorganised_worker",
+        "street_vendor",
+        "artisan"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Engaged in listed unorganised manual occupations"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Proof of employment / VAO certificate",
+      "Bank passbook",
+      "Ration card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnuwwb.tn.gov.in/"
+    },
+    "source": {
+      "name": "Labour Welfare and Skill Development Department",
+      "url": "https://tnuwwb.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "adi-dravidar-welfare-housing-scheme-84",
+    "name": "Adi Dravidar Welfare Housing Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Adi Dravidar and Tribal Welfare Department",
+    "category": "Housing & Social Justice",
+    "description": "Free house-site pattas and financial grant for construction of pucca houses for landless Adi Dravidar and Tribal families",
+    "benefits": [
+      "Free house-site pattas and financial grant for construction of pucca houses for landless Adi Dravidar and Tribal families"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 120000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Homeless SC / ST families"
+      ]
+    },
+    "requiredDocuments": [
+      "Community Certificate (SC/ST)",
+      "Income Certificate",
+      "Aadhaar Card",
+      "Ration Card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmaymis.gov.in/"
+    },
+    "source": {
+      "name": "Adi Dravidar and Tribal Welfare Department",
+      "url": "https://pmaymis.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "tribal-welfare-higher-education-scholarship-85",
+    "name": "Tribal Welfare Higher Education Scholarship",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Adi Dravidar and Tribal Welfare Department",
+    "category": "Education & Social Justice",
+    "description": "Full maintenance allowance, laptop grant, and compulsory non-refundable fee waiver for ST students pursuing degree courses",
+    "benefits": [
+      "Full maintenance allowance, laptop grant, and compulsory non-refundable fee waiver for ST students pursuing degree courses"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 16,
+        "max": 30
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": 250000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Scheduled Tribe (ST) students in recognized colleges"
+      ]
+    },
+    "requiredDocuments": [
+      "ST Community Certificate",
+      "Income Certificate",
+      "College Admission Receipt",
+      "Aadhaar card"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://scholarships.gov.in/"
+    },
+    "source": {
+      "name": "Adi Dravidar and Tribal Welfare Department",
+      "url": "https://scholarships.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "backward-classes-mbc-marriage-assistance-scheme-86",
+    "name": "Backward Classes & MBC Marriage Assistance Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Backward Classes, Most Backward Classes and Minorities Welfare Department",
+    "category": "Social Welfare & Women",
+    "description": "Financial assistance of Rs.25,000 to Rs.50,000 and 8-gram gold coin for marriage of daughters from poor BC/MBC families",
+    "benefits": [
+      "Financial assistance of Rs.25,000 to Rs.50,000 and 8-gram gold coin for marriage of daughters from poor BC/MBC families"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 72000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "BC / MBC / DNC community families"
+      ]
+    },
+    "requiredDocuments": [
+      "Community Certificate (BC/MBC/DNC)",
+      "Income Certificate",
+      "Age proof of bride",
+      "Marriage invitation"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Backward Classes, Most Backward Classes and Minorities Welfare Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "free-land-distribution-to-landless-adi-dravidars-87",
+    "name": "Free Land Distribution to Landless Adi Dravidars",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Adi Dravidar and Tribal Welfare Department",
+    "category": "Social Justice & Land",
+    "description": "Acquisition and free distribution of cultivable agricultural land and residential house sites to landless SC agricultural laborers",
+    "benefits": [
+      "Acquisition and free distribution of cultivable agricultural land and residential house sites to landless SC agricultural laborers"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "daily_wage_worker",
+        "farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": 72000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Landless agricultural laborers belonging to Adi Dravidar community"
+      ]
+    },
+    "requiredDocuments": [
+      "Community certificate (SC)",
+      "Income & Landless Certificate from Tahsildar",
+      "Aadhaar Card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "source": {
+      "name": "Adi Dravidar and Tribal Welfare Department",
+      "url": "https://tnedistrict.tn.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "hostel-facilities-for-sc-st-students-88",
+    "name": "Hostel Facilities for SC/ST Students",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Adi Dravidar and Tribal Welfare Department",
+    "category": "Education & Hostels",
+    "description": "Free boarding, lodging, uniforms, textbooks, and special coaching in over 1,300 government Adi Dravidar and Tribal welfare hostels",
+    "benefits": [
+      "Free boarding, lodging, uniforms, textbooks, and special coaching in over 1,300 government Adi Dravidar and Tribal welfare hostels"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 9,
+        "max": 25
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": 250000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "SC / ST students studying in Classes 4 to Post-Graduation"
+      ]
+    },
+    "requiredDocuments": [
+      "Community Certificate",
+      "School / College Study Certificate",
+      "Aadhaar Card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "Adi Dravidar and Tribal Welfare Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "free-bus-pass-for-school-and-college-students-89",
+    "name": "Free Bus Pass for School and College Students",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Transport Department",
+    "category": "Transport & Education",
+    "description": "100% free smart card bus pass for unlimited travel between residence and educational institution on state transport buses",
+    "benefits": [
+      "100% free smart card bus pass for unlimited travel between residence and educational institution on state transport buses"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 5,
+        "max": 25
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Students enrolled in recognized schools, ITIs, polytechnics, and colleges"
+      ]
+    },
+    "requiredDocuments": [
+      "Institution Bonafide Certificate with photo",
+      "Aadhaar card",
+      "EMIS student number"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "Transport Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "chennai-metro-rail-concessional-pass-scheme-90",
+    "name": "Chennai Metro Rail Concessional Pass Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Chennai Metro Rail Limited / Housing Department",
+    "category": "Transport & Urban Mobility",
+    "description": "Up to 50% fare discount passes and free travel for differently abled passengers on Chennai Metro network",
+    "benefits": [
+      "Up to 50% fare discount passes and free travel for differently abled passengers on Chennai Metro network"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "student",
+        "any"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu",
+        "Chennai"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Students and daily metro commuters in Chennai Metropolitan area"
+      ]
+    },
+    "requiredDocuments": [
+      "Student ID card / CMRL Smart Card registration"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tnstc.in/"
+    },
+    "source": {
+      "name": "Chennai Metro Rail Limited / Housing Department",
+      "url": "https://www.tnstc.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "village-road-connectivity-scheme-pmgsy-nabard-91",
+    "name": "Village Road Connectivity Scheme (PMGSY / NABARD)",
+    "level": "Central/State",
+    "state": "India",
+    "department": "Rural Development and Panchayat Raj Department",
+    "category": "Rural Infrastructure",
+    "description": "All-weather blacktopped road connectivity, culverts, and causeways for unconnected rural habitations",
+    "benefits": [
+      "All-weather blacktopped road connectivity, culverts, and causeways for unconnected rural habitations"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Rural habitation residents"
+      ]
+    },
+    "requiredDocuments": [
+      "Resident of Gram Panchayat"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Rural Development and Panchayat Raj Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "arivagam-ai-city-emerging-tech-innovation-hub-92",
+    "name": "Arivagam AI City & Emerging Tech Innovation Hub",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Information Technology and Digital Services Department",
+    "category": "Technology & Innovation",
+    "description": "Subsidized co-working space, AI compute access, seed grants up to Rs.10 Lakh for deep-tech student startups and innovators",
+    "benefits": [
+      "Subsidized co-working space, AI compute access, seed grants up to Rs.10 Lakh for deep-tech student startups and innovators"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 35
+      },
+      "gender": [],
+      "occupation": [
+        "entrepreneur",
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Tech innovators, AI researchers, and deep-tech startup founders"
+      ]
+    },
+    "requiredDocuments": [
+      "Startup TN registration",
+      "Product proposal",
+      "Aadhaar card"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Information Technology and Digital Services Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "tamil-nadu-eco-tourism-mission-93",
+    "name": "Tamil Nadu Eco-Tourism Mission",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Tourism, Culture and Religious Endowments Department",
+    "category": "Tourism & Livelihood",
+    "description": "Financial subsidies and training for local community youth to operate nature guide services, eco-lodges, and adventure tourism circuits",
+    "benefits": [
+      "Financial subsidies and training for local community youth to operate nature guide services, eco-lodges, and adventure tourism circuits"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 40
+      },
+      "gender": [],
+      "occupation": [
+        "unemployed",
+        "entrepreneur"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Local youth residing near designated eco-tourism circuits"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card",
+      "Local residence certificate",
+      "Tourist guide training enrollment"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Tourism, Culture and Religious Endowments Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "folk-artists-livelihood-instrument-grant-scheme-94",
+    "name": "Folk Artists Livelihood & Instrument Grant Scheme",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Tamil Development and Information Department",
+    "category": "Arts, Culture & Welfare",
+    "description": "Monthly pension for veteran folk artists and one-time grant of Rs.10,000 for purchasing traditional folk musical instruments and costumes",
+    "benefits": [
+      "Monthly pension for veteran folk artists and one-time grant of Rs.10,000 for purchasing traditional folk musical instruments and costumes"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "artisan"
+      ],
+      "student": null,
+      "annualIncomeMax": 120000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Practicing traditional Tamil folk artists (Karagattam, Oyilattam, Thappattam, Therukoothu, etc.)"
+      ]
+    },
+    "requiredDocuments": [
+      "Folk Artist Welfare Board Identity Card",
+      "Aadhaar Card",
+      "Bank Passbook"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Tamil Development and Information Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "tn-vetri-rural-infrastructure-livelihood-mission-95",
+    "name": "TN-VETRI Rural Infrastructure & Livelihood Mission",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Rural Development and Panchayat Raj Department",
+    "category": "Rural Development",
+    "description": "Rural infrastructure funding mission for community drying yards, rural weekly markets, and solar micro-grids",
+    "benefits": [
+      "Rural infrastructure funding mission for community drying yards, rural weekly markets, and solar micro-grids"
+    ],
+    "eligibility": {
+      "age": {
+        "min": null,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Rural habitations and village panchayats"
+      ]
+    },
+    "requiredDocuments": [
+      "Gram Panchayat certificate"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Rural Development and Panchayat Raj Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "chief-minister-s-breakfast-scheme-expansion-urban-rural-96",
+    "name": "Chief Minister's Breakfast Scheme Expansion (Urban & Rural)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education & Nutrition",
+    "description": "Nutritious hot breakfast serving millets, upma, pongal, and sambar on all school days for over 17 lakh students across 31,000 schools",
+    "benefits": [
+      "Nutritious hot breakfast serving millets, upma, pongal, and sambar on all school days for over 17 lakh students across 31,000 schools"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 5,
+        "max": 14
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Students enrolled in Government primary and middle schools"
+      ]
+    },
+    "requiredDocuments": [
+      "EMIS student enrollment"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "free-bicycle-scheme-for-higher-secondary-students-97",
+    "name": "Free Bicycle Scheme for Higher Secondary Students",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "School Education Department",
+    "category": "Education",
+    "description": "Free multi-gear bicycle for Class 11 and 12 students in Government schools (Rs.277 crore allocation)",
+    "benefits": [
+      "Free multi-gear bicycle for Class 11 and 12 students in Government schools (Rs.277 crore allocation)"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 15,
+        "max": 18
+      },
+      "gender": [],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Students studying in Government and Aided higher secondary schools"
+      ]
+    },
+    "requiredDocuments": [
+      "School identity card",
+      "Aadhaar card"
+    ],
+    "application": {
+      "method": "Official Portal / Department Office",
+      "url": "https://tnschools.gov.in/"
+    },
+    "source": {
+      "name": "School Education Department",
+      "url": "https://tnschools.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "amma-cement-scheme-for-affordable-housing-98",
+    "name": "Amma Cement Scheme for Affordable Housing",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Tamil Nadu Cements Corporation / Rural Development",
+    "category": "Housing & Construction",
+    "description": "Subsidised high-grade Portland Pozzolana Cement bags (at fixed rate of Rs.216/bag) for low and middle-income house construction",
+    "benefits": [
+      "Subsidised high-grade Portland Pozzolana Cement bags (at fixed rate of Rs.216/bag) for low and middle-income house construction"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 21,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": 300000,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Constructing houses under 1,500 sq.ft or house repair under 500 sq.ft"
+      ]
+    },
+    "requiredDocuments": [
+      "Approved building plan / VAO house repair certificate",
+      "Aadhaar Card",
+      "Property document"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmaymis.gov.in/"
+    },
+    "source": {
+      "name": "Tamil Nadu Cements Corporation / Rural Development",
+      "url": "https://pmaymis.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "namakku-naame-thittam-self-sufficiency-community-scheme-99",
+    "name": "Namakku Naame Thittam (Self-Sufficiency Community Scheme)",
+    "level": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "department": "Rural Development and Panchayat Raj Department",
+    "category": "Community Development",
+    "description": "Matching government grant of 66.6% (2:1 ratio) for community development projects funded 33.3% by public/NGO contribution",
+    "benefits": [
+      "Matching government grant of 66.6% (2:1 ratio) for community development projects funded 33.3% by public/NGO contribution"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Community groups, public associations, and alumni contributing 1/3rd project cost"
+      ]
+    },
+    "requiredDocuments": [
+      "Community project proposal",
+      "Public contribution bank deposit receipt"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "source": {
+      "name": "Rural Development and Panchayat Raj Department",
+      "url": "https://www.tn.gov.in/department/30"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "pm-kisan-samman-nidhi-pm-kisan-100",
+    "name": "PM Kisan Samman Nidhi (PM-KISAN)",
+    "level": "Central",
+    "state": "India",
+    "department": "Ministry of Agriculture & Farmers Welfare / TN Agriculture Dept",
+    "category": "Agriculture",
+    "description": "Rs.6,000 per year direct income support in three equal 4-monthly installments of Rs.2,000",
+    "benefits": [
+      "Rs.6,000 per year direct income support in three equal 4-monthly installments of Rs.2,000"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "farmer",
+        "small_farmer"
+      ],
+      "student": null,
+      "annualIncomeMax": null,
+      "states": [
+        "ALL",
+        "Tamil Nadu",
+        "India"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Cultivable land ownership; excludes institutional landholders, income tax payees, and constitutional post holders"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar card linked with active mobile number",
+      "Land ownership record (Patta / RoR / Khasra)",
+      "Bank account details (Aadhaar seeded)"
+    ],
+    "application": {
+      "method": "Online Official Portal",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "source": {
+      "name": "Ministry of Agriculture & Farmers Welfare / TN Agriculture Dept",
+      "url": "https://pmkisan.gov.in/"
+    },
+    "lastVerified": "2026-09-24"
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "mock-test-farmer-emergency-grant",
+    "name": "[TEST/MOCK DATA] Small Farmer Seed & Irrigation Relief Grant",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "department": "Department of Agriculture (Test Sandbox)",
+    "category": "Agriculture",
+    "description": "TEST DATA: Provides direct mock financial assistance of Rs.10,000 per crop cycle for small landholding farmers facing seasonal rainfall deficit.",
+    "benefits": [
+      "Mock financial grant of Rs.10,000 per crop cycle",
+      "Free mock seed distribution vouchers",
+      "Subsidized mock micro-irrigation equipment"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 18,
+        "max": 70
+      },
+      "gender": [],
+      "occupation": [
+        "farmer",
+        "small_farmer",
+        "agricultural_worker"
+      ],
+      "student": false,
+      "annualIncomeMax": 200000,
+      "states": [
+        "Tamil Nadu",
+        "India"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Must hold agricultural land under 5 acres (Test condition)"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Land Ownership Document (Patta/Chitta - Test copy)",
+      "Bank Account Passbook"
+    ],
+    "application": {
+      "method": "Online / Test Portal",
+      "url": "https://example.gov.in/test-farmer-scheme"
+    },
+    "source": {
+      "name": "State Agriculture Portal (Mock Dataset)",
+      "url": "https://example.gov.in/test-farmer-scheme"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "mock-test-girl-child-stem-scholarship",
+    "name": "[TEST/MOCK DATA] Higher Education STEM Excellence Grant for Girls",
+    "level": "State",
+    "state": "Tamil Nadu",
+    "department": "Higher Education Department (Test Sandbox)",
+    "category": "Education",
+    "description": "TEST DATA: Provides mock scholarship of Rs.25,000 per academic year for female college students enrolled in science, technology, or engineering degrees.",
+    "benefits": [
+      "Mock annual scholarship of Rs.25,000",
+      "Free laptop allowance voucher",
+      "Digital learning access"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 16,
+        "max": 25
+      },
+      "gender": [
+        "female"
+      ],
+      "occupation": [
+        "student"
+      ],
+      "student": true,
+      "annualIncomeMax": 300000,
+      "states": [
+        "Tamil Nadu",
+        "India"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Enrolled full-time in recognized undergraduate STEM degree"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "College Admission & Student ID",
+      "Class 12 Marksheet",
+      "Family Income Certificate"
+    ],
+    "application": {
+      "method": "Online Portal",
+      "url": "https://example.gov.in/test-stem-girls-grant"
+    },
+    "source": {
+      "name": "Higher Education Portal (Mock Dataset)",
+      "url": "https://example.gov.in/test-stem-girls-grant"
+    },
+    "lastVerified": "2026-09-24"
+  },
+  {
+    "id": "mock-test-senior-citizen-pension-plus",
+    "name": "[TEST/MOCK DATA] Senior Citizen Universal Healthcare & Nutrition Pension",
+    "level": "Central",
+    "state": "India",
+    "department": "Ministry of Social Justice & Empowerment (Test Sandbox)",
+    "category": "Social Welfare",
+    "description": "TEST DATA: Direct monthly pension of Rs.2,500 and free doorstep geriatric medicine delivery for elderly citizens aged 60 and above living below poverty line.",
+    "benefits": [
+      "Monthly pension of Rs.2,500 transferred to Aadhaar-seeded bank account",
+      "Free doorstep generic medicine supply",
+      "Annual health checkup voucher"
+    ],
+    "eligibility": {
+      "age": {
+        "min": 60,
+        "max": null
+      },
+      "gender": [],
+      "occupation": [
+        "retired",
+        "unemployed",
+        "any"
+      ],
+      "student": false,
+      "annualIncomeMax": 150000,
+      "states": [
+        "ALL",
+        "India",
+        "Tamil Nadu"
+      ],
+      "categories": [],
+      "otherConditions": [
+        "Must be aged 60 or above",
+        "Household income below test poverty ceiling"
+      ]
+    },
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Age Proof (Birth Certificate / Voter ID)",
+      "Income / BPL Certificate",
+      "Bank Account Details"
+    ],
+    "application": {
+      "method": "Direct Bank Transfer / Gram Panchayat Intake",
+      "url": "https://example.gov.in/test-senior-pension"
+    },
+    "source": {
+      "name": "Social Security Welfare Department (Mock Dataset)",
+      "url": "https://example.gov.in/test-senior-pension"
+    },
+    "lastVerified": "2026-09-24"
+  }
+]

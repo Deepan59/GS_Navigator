@@ -1,0 +1,11 @@
+{
+  "name": "ai-last-mile-gov-service-navigator",
+  "version": "1.0.0",
+  "description": "AI-powered web application helping Indian citizens discover relevant government schemes based on published criteria.",
+  "scripts": {
+    "start:backend": "npm --prefix backend start",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build"
+  }
+}
