@@ -131,27 +131,27 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
   return (
     <div className="space-y-6">
       {/* Section Header with myScheme Tabs */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 pb-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 pb-4">
         <div>
-          <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
-            <Sparkles className="w-5 h-5 text-emerald-600" />
+          <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
             <span>{t("resultsTitle")}</span>
           </h2>
-          <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
             {t("resultsSubtitle")} ({filteredAndSortedResults.length} of {results.length} {t("totalMatchesLabel")})
           </p>
         </div>
 
         {/* Sort dropdown */}
         <div className="flex items-center gap-2">
-          <label className="text-xs font-bold text-slate-500 whitespace-nowrap flex items-center gap-1">
+          <label className="text-xs font-bold text-slate-500 dark:text-slate-400 whitespace-nowrap flex items-center gap-1">
             <ArrowUpDown className="w-3.5 h-3.5" />
             <span>{t("sortByLabel")}:</span>
           </label>
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
-            className="px-3 py-1.5 text-xs bg-white border border-slate-300 rounded-xl font-bold text-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer shadow-2xs"
+            className="px-3 py-1.5 text-xs bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl font-bold text-slate-700 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer shadow-2xs"
           >
             <option value="best_match">{t("sortBestMatch")}</option>
             <option value="most_criteria">{t("sortMostCriteria")}</option>
@@ -164,16 +164,16 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* Left Faceted Filters Sidebar */}
         <div className="lg:col-span-1 space-y-4">
-          <div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-2xs space-y-5">
-            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-              <span className="font-extrabold text-slate-900 text-sm flex items-center gap-1.5">
-                <Filter className="w-4 h-4 text-emerald-600" />
+          <div className="bg-white dark:bg-slate-900 p-5 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-2xs space-y-5">
+            <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+              <span className="font-extrabold text-slate-900 dark:text-white text-sm flex items-center gap-1.5">
+                <Filter className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                 <span>{t("filterHeading")}</span>
               </span>
               {hasActiveFilters && (
                 <button
                   onClick={handleResetFilters}
-                  className="text-[11px] font-bold text-emerald-600 hover:text-emerald-800 cursor-pointer"
+                  className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 hover:text-emerald-800 dark:hover:text-emerald-300 cursor-pointer"
                 >
                   {t("clearFiltersBtn")}
                 </button>
@@ -182,13 +182,13 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
 
             {/* State / Jurisdiction Filter */}
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-700 block">
+              <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block">
                 {t("filterState")}
               </label>
               <select
                 value={selectedStateFilter}
                 onChange={(e) => setSelectedStateFilter(e.target.value)}
-                className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl font-medium text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                className="w-full px-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-medium text-slate-800 dark:text-slate-200 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
               >
                 <option value="all">{language === "ta" ? "அனைத்து மாநிலங்கள் / மத்திய" : "All States & Central"}</option>
                 <option value="tamil_nadu">Tamil Nadu ({language === "ta" ? "தமிழ்நாடு" : "Tamil Nadu"})</option>
@@ -198,13 +198,13 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
 
             {/* Category Filter */}
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-700 block">
+              <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block">
                 {t("filterCategoryLabel")}
               </label>
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl font-medium text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                className="w-full px-3 py-2 text-xs bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-medium text-slate-800 dark:text-slate-200 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
               >
                 <option value="all">{t("categories")?.all || "All Categories"}</option>
                 <option value="Agriculture">{language === "ta" ? "விவசாயம் (Agriculture)" : "Agriculture & Rural"}</option>
@@ -220,10 +220,10 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
 
             {/* Scheme Level */}
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-700 block">
+              <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block">
                 {t("filterLevel")}
               </label>
-              <div className="space-y-1.5 text-xs">
+              <div className="space-y-1.5 text-xs text-slate-700 dark:text-slate-300">
                 <label className="flex items-center gap-2 cursor-pointer font-medium">
                   <input
                     type="radio"
@@ -262,7 +262,7 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
         {/* Right Schemes Catalog & Results */}
         <div className="lg:col-span-3 space-y-4">
           {/* Top Search Bar & Tabs */}
-          <div className="bg-white p-3 rounded-3xl border border-slate-200 shadow-2xs space-y-3">
+          <div className="bg-white dark:bg-slate-900 p-3 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-2xs space-y-3">
             {/* Search Input */}
             <div className="relative">
               <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -271,7 +271,7 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
                 placeholder={t("searchPlaceholder")}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-10 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all font-medium"
+                className="w-full pl-10 pr-10 py-2.5 text-xs sm:text-sm bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white dark:focus:bg-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 transition-all font-medium"
               />
               {searchQuery && (
                 <button
@@ -289,8 +289,8 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
                 onClick={() => setActiveTab("all")}
                 className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap cursor-pointer ${
                   activeTab === "all"
-                    ? "bg-slate-900 text-white shadow-xs"
-                    : "text-slate-600 hover:bg-slate-100"
+                    ? "bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 shadow-xs"
+                    : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"
                 }`}
               >
                 {t("tabAll")} ({results.length})
@@ -300,7 +300,7 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
                 className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
                   activeTab === "eligible"
                     ? "bg-emerald-600 text-white shadow-xs"
-                    : "text-slate-600 hover:bg-slate-100"
+                    : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"
                 }`}
               >
                 <CheckCircle2 className="w-3.5 h-3.5" />
@@ -311,7 +311,7 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
                 className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
                   activeTab === "needs_info"
                     ? "bg-amber-600 text-white shadow-xs"
-                    : "text-slate-600 hover:bg-slate-100"
+                    : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"
                 }`}
               >
                 <HelpCircle className="w-3.5 h-3.5" />
@@ -323,8 +323,8 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
           {/* Active filter badge if category is selected */}
           {selectedCategory !== "all" && (
             <div className="flex items-center gap-2 px-1">
-              <span className="text-xs text-slate-500 font-bold">Active Filter:</span>
-              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900 border border-emerald-300">
+              <span className="text-xs text-slate-500 dark:text-slate-400 font-bold">Active Filter:</span>
+              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-900 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
                 <span>{selectedCategory}</span>
                 <button onClick={() => setSelectedCategory("all")} className="hover:text-red-700 cursor-pointer">
                   <X className="w-3.5 h-3.5" />
@@ -336,12 +336,12 @@ export default function ResultsPage({ results = [], onSelectDetails, selectedCat
           {/* Scheme Cards List */}
           <div className="grid grid-cols-1 gap-4">
             {filteredAndSortedResults.length === 0 ? (
-              <div className="py-16 text-center bg-white rounded-3xl border border-slate-200 p-6 space-y-3">
+              <div className="py-16 text-center bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 space-y-3">
                 <Layers className="w-10 h-10 text-slate-400 mx-auto" />
-                <h3 className="font-bold text-slate-800 text-base">
+                <h3 className="font-bold text-slate-800 dark:text-slate-200 text-base">
                   {language === "ta" ? "பொருத்தமான திட்டங்கள் எதுவும் காணப்படவில்லை" : "No matching schemes found"}
                 </h3>
-                <p className="text-xs text-slate-500 max-w-sm mx-auto">
+                <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
                   {language === "ta" ? "தேடல் வினவல் அல்லது வடிகட்டிகளை மாற்றி முயற்சிக்கவும்." : "Try adjusting your search query or clearing the active filters."}
                 </p>
                 <button

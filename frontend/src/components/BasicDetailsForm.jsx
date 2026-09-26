@@ -104,7 +104,7 @@ export default function BasicDetailsForm({
   ];
 
   return (
-    <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden transition-all">
+    <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden transition-all">
       {/* Header Banner */}
       <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white px-6 py-6 sm:px-8 border-b border-slate-800">
         <div className="flex flex-wrap items-center justify-between gap-4">
@@ -137,8 +137,8 @@ export default function BasicDetailsForm({
           
           {/* 1. Age Input with Presets */}
           <div className="space-y-3">
-            <label className="text-xs sm:text-sm font-bold text-slate-800 flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-blue-600" />
+            <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+              <Calendar className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span>{b.ageLabel || "Your Age (Years)"}</span>
               <span className="text-red-500">*</span>
             </label>
@@ -151,7 +151,7 @@ export default function BasicDetailsForm({
                 onChange={(e) => setAge(e.target.value)}
                 placeholder={b.agePlaceholder || "e.g. 21"}
                 required
-                className="w-32 bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all"
+                className="w-32 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white dark:focus:bg-slate-800 transition-all"
               />
               {/* Quick Age Presets */}
               <div className="flex flex-wrap gap-1.5 text-xs">
@@ -163,7 +163,7 @@ export default function BasicDetailsForm({
                     className={`px-2.5 py-1.5 rounded-lg border font-medium cursor-pointer transition-colors ${
                       age === preset
                         ? "bg-blue-700 text-white border-blue-700 font-bold"
-                        : "bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"
+                        : "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700"
                     }`}
                   >
                     {preset} yrs
@@ -175,8 +175,8 @@ export default function BasicDetailsForm({
 
           {/* 2. Gender Selection */}
           <div className="space-y-3">
-            <label className="text-xs sm:text-sm font-bold text-slate-800 flex items-center gap-2">
-              <User className="w-4 h-4 text-blue-600" />
+            <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+              <User className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span>{b.genderLabel || "Gender"}</span>
               <span className="text-red-500">*</span>
             </label>
@@ -192,8 +192,8 @@ export default function BasicDetailsForm({
                   onClick={() => setGender(item.key)}
                   className={`py-2.5 px-3 rounded-xl border text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 cursor-pointer transition-all ${
                     gender === item.key
-                      ? "bg-blue-50 border-blue-600 text-blue-900 ring-2 ring-blue-600/30 shadow-xs"
-                      : "bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100"
+                      ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 shadow-xs"
+                      : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
                   }`}
                 >
                   <span>{item.icon}</span>
@@ -205,14 +205,14 @@ export default function BasicDetailsForm({
 
           {/* 3. State / UT Selection */}
           <div className="space-y-3">
-            <label className="text-xs sm:text-sm font-bold text-slate-800 flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-blue-600" />
+            <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span>{b.stateLabel || "State / UT of Residence"}</span>
             </label>
             <select
               value={state}
               onChange={(e) => setState(e.target.value)}
-              className="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition-all cursor-pointer"
+              className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-medium text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white dark:focus:bg-slate-800 transition-all cursor-pointer"
             >
               <option value="Tamil Nadu">Tamil Nadu (தமிழ்நாடு)</option>
               <option value="Central">Central Schemes / All India (அனைத்திந்திய மத்திய அரசு)</option>
@@ -227,8 +227,8 @@ export default function BasicDetailsForm({
 
           {/* 4. Social Category */}
           <div className="space-y-3">
-            <label className="text-xs sm:text-sm font-bold text-slate-800 flex items-center gap-2">
-              <Award className="w-4 h-4 text-blue-600" />
+            <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+              <Award className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span>{b.categoryLabel || "Social Category / Caste Group"}</span>
             </label>
             <div className="flex flex-wrap gap-2">
@@ -239,8 +239,8 @@ export default function BasicDetailsForm({
                   onClick={() => setCategory(cat.key)}
                   className={`px-3 py-2 rounded-xl border text-xs font-semibold cursor-pointer transition-all ${
                     category === cat.key
-                      ? "bg-blue-50 border-blue-600 text-blue-900 ring-2 ring-blue-600/30"
-                      : "bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100"
+                      ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30"
+                      : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
                   }`}
                 >
                   {cat.label}
@@ -252,8 +252,8 @@ export default function BasicDetailsForm({
 
         {/* 5. Occupation / Status (Grid of Badges) */}
         <div className="space-y-3 pt-2">
-          <label className="text-xs sm:text-sm font-bold text-slate-800 flex items-center gap-2">
-            <Briefcase className="w-4 h-4 text-blue-600" />
+          <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+            <Briefcase className="w-4 h-4 text-blue-600 dark:text-blue-400" />
             <span>{b.occupationLabel || "Primary Occupation / Status"}</span>
             <span className="text-red-500">*</span>
           </label>
@@ -265,8 +265,8 @@ export default function BasicDetailsForm({
                 onClick={() => setOccupation(occ.key)}
                 className={`p-3 rounded-2xl border text-left cursor-pointer transition-all flex items-center gap-2.5 ${
                   occupation === occ.key
-                    ? "bg-blue-50 border-blue-600 text-blue-900 ring-2 ring-blue-600/30 shadow-xs"
-                    : "bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100"
+                    ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 shadow-xs"
+                    : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
                 }`}
               >
                 <span className="text-lg shrink-0">{occ.icon}</span>
@@ -279,11 +279,11 @@ export default function BasicDetailsForm({
         {/* 6. Income Brackets */}
         <div className="space-y-3 pt-2">
           <div className="flex items-center justify-between">
-            <label className="text-xs sm:text-sm font-bold text-slate-800 flex items-center gap-2">
-              <IndianRupee className="w-4 h-4 text-blue-600" />
+            <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+              <IndianRupee className="w-4 h-4 text-blue-600 dark:text-blue-400" />
               <span>{b.incomeLabel || "Annual Household Income"}</span>
             </label>
-            <span className="text-xs text-blue-700 font-bold bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-100">
+            <span className="text-xs text-blue-700 dark:text-blue-300 font-bold bg-blue-50 dark:bg-blue-900/40 px-2.5 py-0.5 rounded-full border border-blue-100 dark:border-blue-800">
               Approx: ₹{Number(customIncome).toLocaleString("en-IN")} / yr
             </span>
           </div>
@@ -296,14 +296,14 @@ export default function BasicDetailsForm({
                 onClick={() => handleIncomeSelect(inc.key)}
                 className={`p-3 rounded-2xl border text-left cursor-pointer transition-all ${
                   incomeBracket === inc.key
-                    ? "bg-blue-50 border-blue-600 text-blue-900 ring-2 ring-blue-600/30 shadow-xs"
-                    : "bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100"
+                    ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30 shadow-xs"
+                    : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
                 }`}
               >
-                <div className="font-bold text-xs sm:text-sm text-slate-900 leading-tight">
+                <div className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white leading-tight">
                   {inc.label}
                 </div>
-                <div className="text-[11px] text-slate-500 mt-1">
+                <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">
                   {inc.badge}
                 </div>
               </button>
@@ -313,8 +313,8 @@ export default function BasicDetailsForm({
 
         {/* 7. Differently Abled Status */}
         <div className="space-y-3 pt-2">
-          <label className="text-xs sm:text-sm font-bold text-slate-800 flex items-center gap-2">
-            <HeartHandshake className="w-4 h-4 text-blue-600" />
+          <label className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+            <HeartHandshake className="w-4 h-4 text-blue-600 dark:text-blue-400" />
             <span>{b.disabilityLabel || "Are you Differently-Abled (PwD)?"}</span>
           </label>
           <div className="flex items-center gap-3">
@@ -323,8 +323,8 @@ export default function BasicDetailsForm({
               onClick={() => setHasDisability("no")}
               className={`px-5 py-2 rounded-xl border text-xs sm:text-sm font-semibold cursor-pointer transition-all ${
                 hasDisability === "no"
-                  ? "bg-blue-50 border-blue-600 text-blue-900 ring-2 ring-blue-600/30"
-                  : "bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100"
+                  ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30"
+                  : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
               }`}
             >
               {b.no || "No"}
@@ -334,8 +334,8 @@ export default function BasicDetailsForm({
               onClick={() => setHasDisability("yes")}
               className={`px-5 py-2 rounded-xl border text-xs sm:text-sm font-semibold cursor-pointer transition-all ${
                 hasDisability === "yes"
-                  ? "bg-blue-50 border-blue-600 text-blue-900 ring-2 ring-blue-600/30"
-                  : "bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100"
+                  ? "bg-blue-50 dark:bg-blue-900/40 border-blue-600 dark:border-blue-500 text-blue-900 dark:text-blue-200 ring-2 ring-blue-600/30"
+                  : "bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
               }`}
             >
               {b.yes || "Yes"}
@@ -344,9 +344,9 @@ export default function BasicDetailsForm({
         </div>
 
         {/* Submit / Proceed Button */}
-        <div className="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2 text-xs text-slate-500">
-            <ShieldCheck className="w-4 h-4 text-emerald-600" />
+        <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+            <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             <span>{language === "ta" ? "உங்கள் தகவல்கள் பாதுகாப்பானது & அரசு விதிகளோடு மட்டுமே ஒப்பிடப்படும்." : "Details remain strictly private & evaluated against official criteria."}</span>
           </div>
 

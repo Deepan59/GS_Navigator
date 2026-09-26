@@ -61,33 +61,33 @@ export default function LandingHero({ onStartAssistant, onSelectSamplePrompt, to
       </div>
 
       {/* 3-Step Scheme Discovery Process */}
-      <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-2xs space-y-4">
-        <h3 className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">
+      <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-2xs space-y-4 transition-colors">
+        <h3 className="text-xs font-extrabold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
           {t("heroStepsTitle")}
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-            <div className="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-xs">
+          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700/80 space-y-2">
+            <div className="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
               1
             </div>
-            <h4 className="font-bold text-sm text-slate-900">{t("step1Title")}</h4>
-            <p className="text-xs text-slate-500 leading-relaxed">{t("step1Desc")}</p>
+            <h4 className="font-bold text-sm text-slate-900 dark:text-white">{t("step1Title")}</h4>
+            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{t("step1Desc")}</p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-            <div className="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">
+          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700/80 space-y-2">
+            <div className="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
               2
             </div>
-            <h4 className="font-bold text-sm text-slate-900">{t("step2Title")}</h4>
-            <p className="text-xs text-slate-500 leading-relaxed">{t("step2Desc")}</p>
+            <h4 className="font-bold text-sm text-slate-900 dark:text-white">{t("step2Title")}</h4>
+            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{t("step2Desc")}</p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
-            <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">
+          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-100 dark:border-slate-700/80 space-y-2">
+            <div className="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
               3
             </div>
-            <h4 className="font-bold text-sm text-slate-900">{t("step3Title")}</h4>
-            <p className="text-xs text-slate-500 leading-relaxed">{t("step3Desc")}</p>
+            <h4 className="font-bold text-sm text-slate-900 dark:text-white">{t("step3Title")}</h4>
+            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{t("step3Desc")}</p>
           </div>
         </div>
       </div>

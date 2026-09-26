@@ -135,11 +135,11 @@ export default function CategoryGrid({ onSelectCategory }) {
     <div className="space-y-4 pt-2">
       <div className="flex items-center justify-between">
         <div>
-          <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
-            <Sparkles className="w-4 h-4 text-blue-600" />
+          <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400" />
             <span>{t("categoriesTitle")}</span>
           </h3>
-          <p className="text-xs text-slate-500 mt-0.5">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
             {t("categoriesSubtitle")}
           </p>
         </div>
@@ -154,18 +154,18 @@ export default function CategoryGrid({ onSelectCategory }) {
             <button
               key={cat.id}
               onClick={() => onSelectCategory(cat.filterTerm)}
-              className={`p-3.5 rounded-2xl border transition-all text-left flex flex-col justify-between gap-3 shadow-2xs hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer ${cat.bg}`}
+              className={`p-3.5 rounded-2xl border transition-all text-left flex flex-col justify-between gap-3 shadow-2xs hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer dark:bg-slate-900/80 dark:border-slate-800 dark:text-slate-100 dark:hover:border-slate-700 ${cat.bg}`}
             >
               <div className="flex items-center justify-between w-full">
                 <div className={`w-9 h-9 rounded-xl flex items-center justify-center shadow-xs ${cat.iconBg}`}>
                   <IconComponent className="w-5 h-5" />
                 </div>
-                <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-white/90 border border-slate-200/60">
+                <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-white/90 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200/60 dark:border-slate-700">
                   {cat.count}
                 </span>
               </div>
               <div>
-                <h4 className="font-bold text-xs sm:text-sm leading-snug line-clamp-2">
+                <h4 className="font-bold text-xs sm:text-sm leading-snug line-clamp-2 dark:text-white">
                   {displayName}
                 </h4>
               </div>

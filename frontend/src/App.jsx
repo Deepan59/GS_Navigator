@@ -160,7 +160,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans transition-colors duration-200">
       <Navbar
         onReset={handleReset}
         healthInfo={healthInfo}
@@ -239,12 +239,12 @@ export default function App() {
       )}
 
       {/* Footer */}
-      <footer className="bg-white border-t border-slate-200 py-10 text-center text-xs text-slate-500 mt-16">
+      <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-10 text-center text-xs text-slate-500 dark:text-slate-400 mt-16 transition-colors">
         <div className="max-w-6xl mx-auto px-4 space-y-2">
-          <p className="font-bold text-slate-700">
+          <p className="font-bold text-slate-700 dark:text-slate-200">
             myScheme AI Navigator • {language === "ta" ? "தேசிய நலத்திட்ட கண்டறிதல் தளம்" : "National Citizen Welfare Discovery Platform"}
           </p>
-          <p className="text-slate-400">
+          <p className="text-slate-400 dark:text-slate-500">
             {language === "ta"
               ? "பொதுவில் வெளியிடப்பட்ட அரசு வழிகாட்டுதல்களின் அடிப்படையில் மட்டுமே இயங்குகிறது • அதிகாரப்பூர்வ ஒப்புதல் சம்பந்தப்பட்ட அரசு துறையினரால் மட்டுமே வழங்கப்படும்"
               : "Operates deterministically on published government criteria • Formal approvals by designated government authorities"}
