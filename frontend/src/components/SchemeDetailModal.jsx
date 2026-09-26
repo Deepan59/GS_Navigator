@@ -173,9 +173,6 @@ export default function SchemeDetailModal({ scheme, onClose }) {
                   <span>{t("sourceTitle")}</span>
                 </h5>
                 <p className="font-semibold">{scheme.source?.name || scheme.department}</p>
-                {scheme.lastVerified && (
-                  <p className="text-[11px] text-amber-900/80 dark:text-amber-300/80">{t("lastVerifiedLabel")}: {scheme.lastVerified}</p>
-                )}
               </div>
             </div>
           )}
